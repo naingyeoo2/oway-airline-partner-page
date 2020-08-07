@@ -1,0 +1,39 @@
+.faq-card {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(247, 243, 243);
+}
+.question {
+  cursor: pointer;
+  padding: 5px;
+}
+.show-answer {
+  display: inline-block;
+  padding: 10px;
+}
+.dont-show-answer {
+  display: none;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-right: 10px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-bottom: 2px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-bottom: -2px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 3px;
+}

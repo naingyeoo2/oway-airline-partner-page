@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.for-promotion-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.route-toggle{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.route-toggle span{
+    cursor: pointer;
+    // border: none;
+    background: none;
+    font-size: 18px;
+    // height: 37px;
+    margin-right: 20px;
+    height: 40px;
+}
+.route-toggle span.active{
+    color: #404040;
+    border-bottom: 2px solid #faa534;
+    padding-bottom: 20px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 38px;
+    padding: 5px;
+    transition: 0.3s all ease-in;
+}

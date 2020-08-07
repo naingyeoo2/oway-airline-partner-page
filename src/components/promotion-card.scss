@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.promotion-card{
+    width: 20%;
+    // height: 180px;
+    // border: 1px solid black;
+    box-shadow: 0px 0px 8px rgb(161, 157, 157);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.promotion-card:hover{
+    box-shadow: 2px 2px 8px gray;
+}
+.card-title{
+    padding: 10px;
+}
+.card-content{
+    padding: 10px;
+}
+@media only screen and (max-width: 991px) {
+    .promotion-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  }
+  

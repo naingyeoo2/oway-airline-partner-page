@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.overview .show-more{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+}
+.overview-text {
+//   white-space: nowrap;
+//   width: 1170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  position: relative;
+  transition: 0.9s;
+}
+// .overview p .ellipsis-text{
+//     // padding: 10px;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2; /* number of lines to show */
+//     -webkit-box-orient: vertical;
+//     // border: 1px solid black;
+// }
+// .overview p .ellipsis-text
+// .company-overview {
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2; /* number of lines to show */
+//     -webkit-box-orient: vertical;
+//  }
+// .overview-text {
+//   position: relative;
+//   display: flex;
+//   flex-wrap: wrap;
+//   color: black;
+//   text-align: justify;
+//    /* Could be anything you like. */
+// }
+
+// .overview-text-concat {
+//   position: relative;
+//   display: inline-block;
+//   word-wrap: break-word;
+//   overflow: hidden;
+//   max-height: 3.6em; /* (Number of lines you want visible) * (line-height) */
+//   line-height: 1.2em;
+//   text-align: justify;
+// }
+
+// .overview-text.ellipsis::after {
+//   content: "...";
+//   position: absolute;
+//   right: -12px;
+//   bottom: 4px;
+// }

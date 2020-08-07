@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.title-airline {
+  margin-bottom: 10px;
+}
+
+.for-airline-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}

@@ -1,0 +1,36 @@
+.popular-route-card{
+    background: #0A56BB;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.popular-route-card:hover{
+    box-shadow: 0px 0px 8px #f59120;
+    background: #f59120;
+}
+.dash{
+    margin: 0 5px;
+    color: #f59120;
+}
+.popular-route-card:hover .dash{
+    color: #0A56BB;
+}
+.route-icon{
+    background-image: url('../assets/images/svg/route-icon.svg');
+    width: 15px;
+    height: 12px;
+    margin: 0 5px;
+    display: inline-block;
+}
+.popular-route-card:hover .route-icon{
+    background-image: url('../assets/images/svg/route-icon-hover.svg');
+    width: 15px;
+    height: 12px;
+    margin: 0 5px;
+    display: inline-block;
+}
