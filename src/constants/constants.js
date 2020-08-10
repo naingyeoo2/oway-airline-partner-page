@@ -240,10 +240,10 @@ export const partners = [
             img_url: "yangon.jpg",
             name: "Yangon",
           },
-          {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
-          },
+          // {
+          //   img_url: "mandalay.jpg",
+          //   name: "Mandalay",
+          // },
         ],
       },
     },
@@ -328,24 +328,28 @@ export const partners = [
         title: "Round Trip",
         route: [
           {
+            title: "30% OFF",
             from: "YGN",
             to: "MDY",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "30% OFF",
             from: "MDY",
             to: "YGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "20% OFF",
             from: "YGN",
             to: "BGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "10% OFF",
             from: "YGN",
             to: "SIG",
             date_from: "3-Aug-20",
@@ -570,24 +574,28 @@ export const partners = [
         title: "Round Trip",
         route: [
           {
+            title: "30% OFF",
             from: "YGN",
             to: "MDY",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "30% OFF",
             from: "MDY",
             to: "YGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "20% OFF",
             from: "YGN",
             to: "BGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "10% OFF",
             from: "YGN",
             to: "SIG",
             date_from: "3-Aug-20",
@@ -812,24 +820,28 @@ export const partners = [
         title: "Round Trip",
         route: [
           {
+            title: "30% OFF",
             from: "YGN",
             to: "MDY",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "30% OFF",
             from: "MDY",
             to: "YGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "20% OFF",
             from: "YGN",
             to: "BGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "10% OFF",
             from: "YGN",
             to: "SIG",
             date_from: "3-Aug-20",
@@ -1054,24 +1066,28 @@ export const partners = [
         title: "Round Trip",
         route: [
           {
+            title: "30% OFF",
             from: "YGN",
             to: "MDY",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "30% OFF",
             from: "MDY",
             to: "YGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "20% OFF",
             from: "YGN",
             to: "BGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "10% OFF",
             from: "YGN",
             to: "SIG",
             date_from: "3-Aug-20",
@@ -1296,24 +1312,28 @@ export const partners = [
         title: "Round Trip",
         route: [
           {
+            title: "30% OFF",
             from: "YGN",
             to: "MDY",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "30% OFF",
             from: "MDY",
             to: "YGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "20% OFF",
             from: "YGN",
             to: "BGN",
             date_from: "3-Aug-20",
             date_to: "10-Aug-20",
           },
           {
+            title: "10% OFF",
             from: "YGN",
             to: "SIG",
             date_from: "3-Aug-20",

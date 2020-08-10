@@ -1,3 +1,4 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
 *{
     margin: 0;
     padding: 0;
@@ -31,3 +32,137 @@
     padding: 5px;
     transition: 0.3s all ease-in;
 }
+
+.alice-carousel {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.alice-carousel__wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.alice-carousel__prev-btn, .alice-carousel__next-btn {
+    position: absolute;
+    top: 100px;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+.alice-carousel__prev-btn {
+    text-align: left !important;
+    left: -25px;
+}
+.alice-carousel__prev-btn::after {
+    // text-align: left;
+    left: -5px;
+}
+.alice-carousel__next-btn {
+    text-align: right;
+    right: 20px;
+}
+.alice-carousel__next-btn::after {
+    // text-align: right;
+    right: 25px;
+}
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+    display: inline-block;
+    color: #465798;
+    cursor: pointer;
+}
+.alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+    font-size: 0;
+    background-size: 13px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: transparent;
+    transition: 0.3s all ease-in;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.16);
+}
+.alice-carousel__prev-btn [data-area]::after {
+    background: url('../assets/images/svg/left-arrow.svg')no-repeat 30% 30%;
+    background-color: #fff;
+}
+.alice-carousel__next-btn [data-area]::after {
+    background: url('../assets/images/svg/right-arrow.svg')no-repeat 30% 30%;
+    background-color: #fff;
+}
+.alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+    content: attr(data-area);
+    position: relative;
+    text-transform: capitalize;
+}
+// .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+//     font-size: 0;
+//     background-size: 13px;
+//     width: 30px;
+//     height: 30px;
+//     display: block;
+//     // background-color: transparent;
+//     transition: 0.3s all ease-in;
+//     border-radius: 50%;
+//     background-color: #fff;
+//     box-shadow: 0px 0px 20px rgba(0,0,0,0.16);
+// }
+// // .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+// //     content: attr(data-area);
+// //     position: relative;
+// //     text-transform: capitalize;
+// // }
+
+
+// .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+//     font-size: 0;
+//     background-size: 13px;
+//     width: 30px;
+//     height: 30px;
+//     display: block;
+//     background-color: transparent;
+//     transition: 0.3s all ease-in;
+//     border-radius: 50%;
+//     background-color: #fff;
+//     box-shadow: 0px 0px 20px rgba(0,0,0,0.16);
+// }
+// .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+//     content: attr(data-area);
+//     position: relative;
+//     text-transform: capitalize;
+// }
+// .alice-carousel__prev-btn [data-area]::after {
+//     // background: url(data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%238e8e8e;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Eleft_arrow_8e8e8e%3C/title%3E%3Cpath class='cls-1' d='M31.25,64A6.07,6.07,0,0,0,33,68.31L82.69,118a6.12,6.12,0,0,0,8.63,0L95,114.31a6.11,6.11,0,0,0,0-8.62L53.26,64,94.92,22.31a6.1,6.1,0,0,0,0-8.62L91.27,10a6.12,6.12,0,0,0-8.63,0L33,59.65A6,6,0,0,0,31.25,64Z'/%3E%3C/svg%3E) no-repeat 45% 48%;
+// content: 'Prev'
+// }
+// .alice-carousel {
+//     z-index: 1;
+//     position: relative;
+// }
+// .alice-carousel__prev-btn{
+//     // text-align: left;
+//     display: inline-block;
+// }
+// .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
+//     position: relative;
+//     content: attr(data-area);
+//     text-transform: capitalize;
+// }
+// .alice-carousel__next-btn{
+//     text-align: right;
+//     display: inline-block;
+// }
+// .alice-carousel__prev-btn, .alice-carousel__next-btn {
+//     border-radius: 50%;
+//     background-color: lightgray;
+// //     position: absolute;
+// //     // // top: 75px;
+// //     // z-index: 5000;
+// //     // width: 0;
+// //     // // height: 100%;
+// //     // padding: 0;
+// }

@@ -13,6 +13,9 @@ class PopularCitiesCard extends Component {
           require(`../assets/images/jpg/${this.props.city.img_url}`) +
           ")",
       },
+      img:{
+        'backgroundImage' : 'url('+require(`../assets/images/jpg/${this.props.city.img_url}`)+')'
+      }
     };
     return (
       <div className="city">

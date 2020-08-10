@@ -5,46 +5,58 @@
 
 $primaryColor: #ffff;
 
-$cardWidth: 360px;
+$cardWidth: 90%;
 $cardHeight: 50px;
 $floatLeft: left;
 
-.card{
-    width: $cardWidth;
-    height: $cardHeight;
+.airline-card{
+    // width: $cardWidth;
+    // height: $cardHeight;
     background-color: $primaryColor;
     padding: 5px;
-    margin: 5px;
+    // margin: 5px;
     border: 0px solid ;
     border-radius: 4px;
-    float: $floatLeft;
-    overflow: hidden;
+    // float: $floatLeft;
+    // overflow: hidden;
     cursor: pointer;
-    box-shadow: 0px 0px 8px rgb(161, 157, 157);
+    box-shadow: 0 0 8px rgb(161, 157, 157);
+    margin-right: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    flex: 0 31%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
 }
-.card:hover{
+.airline-card:nth-child(3n){
+    margin-right: 0;
+}
+.airline-card:hover{
     box-shadow: 2px 2px 8px gray;
     
 }
 .airline-image{
-    width: 19%;
-    height: 100%;
-    float: $floatLeft;
-    font-size: 24px;
-    font-weight: 100;
-    padding-top: 3px;
+    padding: 5px;
+    // width: 20%;
+    // height: 100%;
+    // float: $floatLeft;
+    // font-size: 24px;
+    // font-weight: 100;
+    // padding-top: 3px;
 }
 .airline-name{
-    width: 59%;
-    height: 100%;
-    float: $floatLeft;
-    margin-top: 15px;
+    padding: 5px;
+    text-align: left;
+    // height: 100%;
+    // float: $floatLeft;
+    // margin-top: 15px;
 }
 .link{
-    width: 20%;
-    height: 100%;
-    float: $floatLeft;  
-    text-align: center;
-    margin-top: 15px;
+    padding: 5px;
+    // height: 100%;
+    // float: $floatLeft;  
+    // text-align: center;
+    // margin-top: 15px;
     color: #27e;
 }
