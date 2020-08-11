@@ -25,10 +25,11 @@
 .route-toggle span.active{
     color: #404040;
     border-bottom: 2px solid #faa534;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-weight: bold;
     height: 40px;
     line-height: 38px;
-    padding: 5px;
-    transition: 0.3s all ease-in;
+    padding-left: 0;
+    padding-right: 0;
+    transition: 0.3s all ease-out;
 }

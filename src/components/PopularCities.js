@@ -4,7 +4,7 @@ import "./popular-cities.scss";
 import PopularCitiesCard from "./PopularCitiesCard";
 
 import AliceCarousel from "react-alice-carousel";
-import 'react-alice-carousel/lib/alice-carousel.css'
+import "react-alice-carousel/lib/alice-carousel.css";
 import "./popular-cities.scss";
 
 class PopularCities extends Component {
@@ -20,10 +20,6 @@ class PopularCities extends Component {
   //   // galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
   // };
 
-  responsive = {
-    0: { items: 2 },
-    1024: { items: 4 },
-  };
   changeTabInternational = () =>
     this.setState({ isInternational: true, isDomestic: false });
   changeTabDomestic = () =>
@@ -67,54 +63,36 @@ class PopularCities extends Component {
           {this.state.isInternational ? (
             <AliceCarousel
               mouseTrackingEnabled
-              items={this.state.galleryItems}
+              // items={this.state.galleryItems}
               responsive={this.responsive}
               buttonsDisabled={false}
               dotsDisabled={true}
-              // swipeDisabled={true}
+              responsive={{
+                0: { items: 2 },
+                1024: { items: 4 },
+              }}
             >
-              {/* <button onClick={() => this.Carousel.slidePrev()}>
-                Prev button
-              </button> */}
-             
-                {this.props.popularCities &&
-                  this.props.popularCities.international.cities.map(
-                    (city, index) => (
-                      <PopularCitiesCard city={city} key={index} />
-                    )
-                  )}
-              
-              {/* <button onClick={() => this.Carousel.slideNext()}>
-                Next button
-              </button> */}
-              {/* <button onClick={() => this.slideNext()}>
-                Next button
-              </button><button onClick={() => this.slideNext()}>
-                Next button
-              </button> */}
+              {this.props.popularCities &&
+                this.props.popularCities.international.cities.map(
+                  (city, index) => <PopularCitiesCard city={city} key={index} />
+                )}
             </AliceCarousel>
           ) : (
             <AliceCarousel
               mouseTrackingEnabled
-              items={this.state.galleryItems}
+              // items={this.state.galleryItems}
               responsive={this.responsive}
               buttonsDisabled={false}
               dotsDisabled={true}
+              responsive={{
+                0: { items: 2 },
+                1024: { items: 4 },
+              }}
             >
-     
-                {this.props.popularCities &&
-                  this.props.popularCities.domestic.cities.map(
-                    (city, index) => (
-                      <PopularCitiesCard city={city} key={index} />
-                    )
-                  )}
-          
-              {/* <button onClick={() => this.slidePrev()}>
-                Prev button
-              </button>
-              <button onClick={() => this.slideNext()}>
-                Next button
-              </button> */}
+              {this.props.popularCities &&
+                this.props.popularCities.domestic.cities.map((city, index) => (
+                  <PopularCitiesCard city={city} key={index} />
+                ))}
             </AliceCarousel>
           )}
         </div>

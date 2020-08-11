@@ -240,10 +240,10 @@ export const partners = [
             img_url: "yangon.jpg",
             name: "Yangon",
           },
-          // {
-          //   img_url: "mandalay.jpg",
-          //   name: "Mandalay",
-          // },
+          {
+            img_url: "mandalay.jpg",
+            name: "Mandalay",
+          },
         ],
       },
     },

@@ -15,8 +15,8 @@ class PopularAirlines extends Component {
               <Flights item={item} key={item.id} path={this.props.path} />
             ))}
           </div>
-          <hr></hr>
         </div>
+        <hr></hr>
       </div>
     );
   }

@@ -25,12 +25,11 @@
 .city-toggle span.active{
     color: #404040;
     border-bottom: 2px solid #faa534;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     font-weight: bold;
     height: 40px;
     line-height: 38px;
-    padding: 5px;
-    transition: 0.3s all ease-in;
+    transition: 0.3s all ease-out;
 }
 
 .alice-carousel {
@@ -49,26 +48,26 @@
 .alice-carousel__prev-btn, .alice-carousel__next-btn {
     position: absolute;
     top: 100px;
-    width: auto;
+    width: auto !important;
     height: auto;
     padding: 0;
 }
 .alice-carousel__prev-btn {
     text-align: left !important;
-    left: -25px;
+    left: -15px;
 }
-.alice-carousel__prev-btn::after {
-    // text-align: left;
-    left: -5px;
-}
+// .alice-carousel__prev-btn::after {
+//     // text-align: left;
+//     left: -5px;
+// }
 .alice-carousel__next-btn {
     text-align: right;
-    right: 20px;
+    right: -10px;
 }
-.alice-carousel__next-btn::after {
-    // text-align: right;
-    right: 25px;
-}
+// .alice-carousel__next-btn::after {
+//     // text-align: right;
+//     right: 25px;
+// }
 .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
     display: inline-block;
     color: #465798;

@@ -2,10 +2,15 @@
     margin: o;
     padding: 0;
 }
-
+.popular-route{
+    background: url('../assets/images/jpg/pupular-route-bg.jpg');
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .for-route-card{
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
