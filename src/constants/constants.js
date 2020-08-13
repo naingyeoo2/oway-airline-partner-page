@@ -208,19 +208,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -229,20 +237,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },
@@ -454,19 +470,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -475,20 +499,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },
@@ -700,19 +732,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -721,20 +761,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },
@@ -946,19 +994,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -967,20 +1023,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },
@@ -1192,19 +1256,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -1213,20 +1285,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },
@@ -1438,19 +1518,27 @@ export const partners = [
         title: "International",
         cities: [
           {
-            img_url: "bangkok.jpg",
+            img_url: "int-bangkok.jpg",
             name: "Bangkok",
           },
           {
-            img_url: "singapore.jpg",
-            name: "Singapore",
+            img_url: "int-cambodia.jpg",
+            name: "Cambodia",
           },
           {
-            img_url: "bangkok.jpg",
-            name: "Bangkok",
+            img_url: "int-hochiminh.jpg",
+            name: "Hochiminh",
           },
           {
-            img_url: "singapore.jpg",
+            img_url: "int-indonesia.jpg",
+            name: "Indonesia",
+          },
+          {
+            img_url: "int-malaysia.jpg",
+            name: "Malaysia",
+          },
+          {
+            img_url: "int-singapore.jpg",
             name: "Singapore",
           },
         ],
@@ -1459,20 +1547,28 @@ export const partners = [
         title: "Domestic",
         cities: [
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-bagan.jpg",
+            name: "Bagan",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-heho.jpg",
+            name: "Heho",
           },
           {
-            img_url: "yangon.jpg",
-            name: "Yangon",
+            img_url: "des-kawthaung.jpg",
+            name: "Kawthaung",
           },
           {
-            img_url: "mandalay.jpg",
-            name: "Mandalay",
+            img_url: "des-mandalay.jpg",
+            name: "Manadalay",
+          },
+          {
+            img_url: "des-naypyitaw.jpg",
+            name: "Nay Pyi Taw",
+          },
+          {
+            img_url: "des-ngapali.jpg",
+            name: "Ngapali",
           },
         ],
       },

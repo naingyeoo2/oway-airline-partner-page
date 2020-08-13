@@ -35,7 +35,11 @@ class PopularCities extends Component {
             <h2>
               {this.props.popularCities && this.props.popularCities.title}
             </h2>
-
+            <div className="header-title">
+              <small>
+                <span className="faq-quote">most popular places</span>
+              </small>
+            </div>
             <div className="city-toggle">
               {this.props.popularCities && (
                 <span
@@ -68,9 +72,11 @@ class PopularCities extends Component {
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{
-                0: { items: 2 },
-                1024: { items: 4 },
+                0: { items: 3 },
+                1024: { items: 6 },
               }}
+              autoPlay={true}
+              autoPlayInterval={3000}
             >
               {this.props.popularCities &&
                 this.props.popularCities.international.cities.map(
@@ -85,9 +91,11 @@ class PopularCities extends Component {
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{
-                0: { items: 2 },
-                1024: { items: 4 },
+                0: { items: 3 },
+                1024: { items: 6 },
               }}
+              autoPlay={true}
+              autoPlayInterval={3000}
             >
               {this.props.popularCities &&
                 this.props.popularCities.domestic.cities.map((city, index) => (

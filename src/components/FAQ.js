@@ -11,6 +11,11 @@ class FAQ extends Component {
           <div className="faq">
             <center>
               <h2>{this.props.faq && this.props.faq.title}</h2>
+              <div className="header-title">
+                <small>
+                  <span className="faq-quote">this is faq section</span>
+                </small>
+              </div>
             </center>
             <div>
               <ul>

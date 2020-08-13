@@ -8,7 +8,6 @@ class Flights extends Component {
   }
   render() {
     return (
-      // <div style={this.props.path == this.props.item.link ? { 'display': 'none'} : {}}>
         <Link to={`partner/${this.props.item.link}`} className="airline-card" style={this.props.path == this.props.item.link ? { 'display': 'none'} : {}}>
             <div className="airline-image">
               <img
