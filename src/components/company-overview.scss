@@ -2,17 +2,30 @@
   margin: 0;
   padding: 0;
 }
-
-.overview .show-more{
-    text-align: center;
-    text-decoration: underline;
-    color: blue;
-    cursor: pointer;
-    position: relative;
+.overview{
+  background-color: #fff;
+}
+.company-overview {
+  background-color: #e4e6e5;
+}
+// .company-overview .show-more{
+//     text-align: center;
+//     text-decoration: underline;
+//     color: blue;
+//     cursor: pointer;
+//     position: relative;
+// }
+.more-overview-text {
+  line-height: 2em;
+  max-width: 50%;
+  text-align: center;
+  transition: 5s all ease-in;
+  padding: 5px;
 }
 .overview-text {
-//   white-space: nowrap;
-//   width: 1170px;
+  line-height: 2em;
+  max-width: 50%;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 200px;
@@ -20,8 +33,64 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   position: relative;
-  transition: 0.9s;
+  transition: 5s all ease-in;
+  padding: 5px;
 }
+.company-overview .show-more {
+  background: #e4e6e5;
+  text-align: center;
+  padding-top: 4px;
+  display: block;
+  // float: left;
+  width: 100%;
+}
+.company-overview .show-more span {
+  cursor: pointer;
+  background: #ffffff;
+  padding: 7px 28px;
+  z-index: 1;
+  text-transform: capitalize;
+  color: #0a56bb;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 2px 1px #c5c5c5;
+}
+.company-overview .show-more span:hover {
+  background: #f7f7f7;
+}
+.down-arrow {
+  
+  margin-right: 10px;
+}
+// .down-arrow::before{
+//   content: url('../assets/images/svg/down-arrow.svg');
+// }
+// .down-arrow::before{
+//   fill: #0a56bb;
+// }
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  font-size: 17px;
+  font-weight: bold;
+  vertical-align: center;
+  margin-right: 10px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-bottom: 0;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 0;
+}
+
 // .overview p .ellipsis-text{
 //     // padding: 10px;
 //     overflow: hidden;

@@ -9,7 +9,9 @@ class FAQ extends Component {
       <div className="faq">
         <div className="app-container">
           <div className="faq">
-            <h2>{this.props.faq && this.props.faq.title}</h2>
+            <center>
+              <h2>{this.props.faq && this.props.faq.title}</h2>
+            </center>
             <div>
               <ul>
                 {this.props.faq &&

@@ -5,16 +5,23 @@ class PromotionCard extends Component {
   render() {
     return (
       <div className="promotion-card">
-        <div className="card-title">
-          <h4>{this.props.route && this.props.route.title}</h4>
+        <div className="card-content">
+          <div className="route">
+            <span>{this.props.route.from}</span> -&nbsp;
+            <span>{this.props.route.to}</span>
+            {this.props.isRound ? (
+              <span>-&nbsp;{this.props.route.from}</span>
+            ) : (
+              <span>{""}</span>
+            )}
+          </div>
+          Date:&nbsp;
+          {this.props.route.date_from} -&nbsp;
+          {this.props.route.date_to}
         </div>
         <hr></hr>
-        <div className="card-content">
-          {this.props.route.from} -&nbsp;
-          {this.props.route.to}
-          <br></br>
-          {this.props.route.date_from} to&nbsp;
-          {this.props.route.date_to}
+        <div className="card-title">
+          <h4>{this.props.route && this.props.route.title}</h4>
         </div>
       </div>
     );

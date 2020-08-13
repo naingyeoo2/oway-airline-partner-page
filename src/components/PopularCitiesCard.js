@@ -8,22 +8,17 @@ class PopularCitiesCard extends Component {
   render() {
     const style = {
       image: {
-        'backgroundImage':
+        backgroundImage:
           "url(" +
           require(`../assets/images/jpg/${this.props.city.img_url}`) +
           ")",
       },
-      img:{
-        'backgroundImage' : 'url('+require(`../assets/images/jpg/${this.props.city.img_url}`)+')'
-      }
     };
     return (
       <div className="city">
-        <div className="city-image" style={style.image}>
-          
-        </div>
+        <div className="city-image" style={style.image}></div>
         <div className="city-name">
-          <p>|&nbsp;{this.props.city.name}</p>
+          <span>{this.props.city.name}</span>
         </div>
       </div>
     );

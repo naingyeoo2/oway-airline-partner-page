@@ -86,12 +86,20 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,0.16);
 }
 .alice-carousel__prev-btn [data-area]::after {
-    background: url('../assets/images/svg/left-arrow.svg')no-repeat 30% 30%;
+    background: url('../assets/images/svg/left-arrow.svg')no-repeat 45% 48%;
+    background-size: 15px 15px;
     background-color: #fff;
 }
+.alice-carousel__prev-btn-item :hover::after {
+    background-position: 42% 48%;
+}
 .alice-carousel__next-btn [data-area]::after {
-    background: url('../assets/images/svg/right-arrow.svg')no-repeat 30% 30%;
+    background: url('../assets/images/svg/right-arrow.svg')no-repeat 55% 48%;
+    background-size: 15px 15px;
     background-color: #fff;
+}
+.alice-carousel__next-btn-item :hover::after {
+    background-position: 59% 48%;
 }
 .alice-carousel__prev-btn [data-area]::after, .alice-carousel__next-btn [data-area]::after {
     content: attr(data-area);

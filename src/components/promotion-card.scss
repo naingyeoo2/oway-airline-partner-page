@@ -3,21 +3,26 @@
     padding: 0;
 }
 .promotion-card{
-    width: 20%;
-    // height: 180px;
-    // border: 1px solid black;
+    width: 23%;
     box-shadow: 0px 0px 8px rgb(161, 157, 157);
     border-radius: 5px;
+    // margin-right: 10px;
     cursor: pointer;
+    padding: 5px;
+    background-color: #fff;
 }
 .promotion-card:hover{
     box-shadow: 2px 2px 8px gray;
 }
 .card-title{
     padding: 10px;
+    color: #0a56bb;
 }
 .card-content{
     padding: 10px;
+}
+.card-content .route{
+    color: #0a56bb;
 }
 @media only screen and (max-width: 991px) {
     .promotion-card {

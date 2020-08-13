@@ -27,6 +27,14 @@ class Promotion extends Component {
         <div className="app-container">
           <center>
             <h2>{this.props.promotion && this.props.promotion.title}</h2>
+            <div className="header-title">
+              <small>
+                <span className="promotion-quote">
+                  enjoy the great savings with us
+                </span>
+              </small>
+            </div>
+
             <div className="route-toggle">
               {this.props.promotion && (
                 <span
@@ -46,23 +54,31 @@ class Promotion extends Component {
                 </span>
               )}
             </div>
-            {/*........... checking trip toggle oneway or round trip .............*/}
-            {this.state.isOneway ? (
-              <div className="for-promotion-card">
-                {this.props.promotion &&
-                  this.props.promotion.one_way.route.map((route, index) => (
-                    <PromotionCard route={route} key={index} />
-                  ))}
-              </div>
-            ) : (
-              <div className="for-promotion-card">
-                {this.props.promotion &&
-                  this.props.promotion.round_trip.route.map((route, index) => (
-                    <PromotionCard route={route} key={index} />
-                  ))}
-              </div>
-            )}
           </center>
+          {/*........... checking trip toggle oneway or round trip .............*/}
+          {this.state.isOneway ? (
+            <div className="for-promotion-card">
+              {this.props.promotion &&
+                this.props.promotion.one_way.route.map((route, index) => (
+                  <PromotionCard
+                    route={route}
+                    key={index}
+                    isRound={this.state.isRoundTrip}
+                  />
+                ))}
+            </div>
+          ) : (
+            <div className="for-promotion-card">
+              {this.props.promotion &&
+                this.props.promotion.round_trip.route.map((route, index) => (
+                  <PromotionCard
+                    route={route}
+                    key={index}
+                    isRound={this.state.isRoundTrip}
+                  />
+                ))}
+            </div>
+          )}
         </div>
         <hr></hr>
       </div>

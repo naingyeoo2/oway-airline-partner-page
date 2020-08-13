@@ -2,6 +2,7 @@
   width: 250px;
   height: 400px;
   cursor: pointer;
+  padding: 5px;
   // background: gray;
 }
 .city-image {
@@ -17,17 +18,28 @@
     background-size: 110% 110%;
     transition: 0.3s all ease-in;
 }
-.city-name {
+
+.city-name{
   height: 10%;
+  margin-top: 10px;
+  
+  // color: black;
+  // padding: 5px;
+}
+.city-name span{
   color: black;
-  padding: 5px;
-}
-.city-name p {
+  // padding: 5px;
+  transition: 0.3s all ease-out;
   text-align: left;
-}
-.city:hover .city-name {
-  color: #1890ff;
   font-weight: bold;
+  
+}
+.city:hover .city-name span{
+  color: #0a56bb;
+  font-weight: bold;
+  border-left: 2px solid #FAA534;
+  padding-left: 10px;
+  
   transition: 0.3s all ease-out;
 }
 

@@ -16,27 +16,37 @@ class CompanyOverview extends Component {
   }
   render() {
     return (
-      <div className="overview">
+      <div className="company-overview">
         <div className="app-container">
-          <center>
-            <h2>Company Overview</h2>
-          </center>
-          {this.props.overview &&
-            (this.state.isShowMore ? (
-              <div className="">
-                <p className="">{this.props.overview.description}</p>
+          <div className="overview">
+            <center>
+              <h2>Company Overview</h2>
+
+              {this.props.overview &&
+                (this.state.isShowMore ? (
+                  <div className="more-overview-text">
+                    {this.props.overview.description}
+                  </div>
+                ) : (
+                  <div className="overview-text">
+                    {this.props.overview.description}
+                  </div>
+                ))}
+              <div className="show-more" title="Company Overview">
+                {this.state.isShowMore ? (
+                  <span onClick={() => this.showMore()}>
+                    <i className="arrow up"></i>Show Less
+                  </span>
+                ) : (
+                  <span onClick={() => this.showMore()}>
+                    <i className="arrow down"></i>Show More
+                  </span>
+                )}
               </div>
-            ) : (
-              <div className="overview-text">
-                <p className="overview-text">
-                  {this.props.overview.description}
-                </p>
-              </div>
-            ))}
-          <div className="show-more" onClick={() => this.showMore()}>
-            {this.state.isShowMore ? <p>Show Less</p> : <p>Show More</p>}
+            </center>
           </div>
         </div>
+
         <hr></hr>
       </div>
     );

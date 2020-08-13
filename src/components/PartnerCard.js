@@ -4,21 +4,21 @@ import "./partner-card.scss";
 class PartnerCard extends Component {
   render() {
     return (
-      <div className="partner">
-      <div className="pcard">
-        <div className="logo">
-          {this.props.image && (
-            <img
-              src={require(`../assets/images/svg/${this.props.image}`)}
-              width="90%"
-              height="90%"
-            />
-          )}
+      <div className="partner-card">
+        <div className="app-container">
+          {/* <div className="logo">
+            {this.props.image && (
+              <img
+                src={require(`../assets/images/svg/${this.props.image}`)}
+                width="100px"
+                height="100px"
+              />
+            )}
+          </div> */}
+          <div className="airline-name">
+            <h1>{this.props.name}</h1>
+          </div>
         </div>
-        <div className="title">
-          <h1>{this.props.name}</h1>
-        </div>
-      </div>
       </div>
     );
   }
