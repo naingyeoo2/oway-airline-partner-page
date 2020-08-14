@@ -23,7 +23,6 @@ class Flights extends Component {
               <span>See More</span>
             </div>
         </Link>
-      // </div>
     );
   }
 }

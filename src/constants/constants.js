@@ -1,39 +1,83 @@
-export const airline = [
+export const airlines = [
   {
-    id: "1",
-    image_url: "air-asia.svg",
-    name: "Air Asia",
-    link: "air-asia",
-  },
-  {
-    id: "2",
-    image_url: "air-asia.svg",
-    name: "Singapore Airlines",
-    link: "singapore-airlines",
-  },
-  {
-    id: "3",
-    image_url: "air-asia.svg",
-    name: "Dragon Air",
-    link: "dragon-air",
-  },
-  {
-    id: "4",
-    image_url: "air-asia.svg",
-    name: "Vietnam Airline",
-    link: "vietnam-airline",
-  },
-  {
-    id: "5",
-    image_url: "air-asia.svg",
-    name: "Malaysia Airline",
-    link: "malaysia-airline",
-  },
-  {
-    id: "6",
-    image_url: "air-asia.svg",
-    name: "Thai Airasia",
-    link: "thai-airasia",
+    international: {
+      id:"1",
+      title: "International",
+      airline_partner: [
+        {
+          id: "1",
+          image_url: "air-asia.jpeg",
+          name: "Air Asia",
+          link: "air-asia",
+        },
+        {
+          id: "2",
+          image_url: "emirates.jpeg",
+          name: "Singapore Airlines",
+          link: "singapore-airlines",
+        },
+        {
+          id: "3",
+          image_url: "jetstar-airways.jpeg",
+          name: "Dragon Air",
+          link: "dragon-air",
+        },
+        {
+          id: "4",
+          image_url: "malaysia-airlines.jpeg",
+          name: "Vietnam Airline",
+          link: "vietnam-airline",
+        },
+        {
+          id: "5",
+          image_url: "nok-air.jpeg",
+          name: "Malaysia Airline",
+          link: "malaysia-airline",
+        },
+        {
+          id: "6",
+          image_url: "qatar-airways.jpeg",
+          name: "Thai Airasia",
+          link: "thai-airasia",
+        },
+      ],
+    },
+    domestic: {
+      id:"2",
+      title: "Domestic",
+      airline_partner: [
+        {
+          id: "1",
+          image_url: "air-kbz.jpeg",
+          name: "Air KBZ",
+          link: "air-asia",
+        },
+        {
+          id: "2",
+          image_url: "golden-myanmar-airlines.jpeg",
+          name: "Golden Myanmar Airines",
+          link: "singapore-airlines",
+        },
+        {
+          id: "3",
+          image_url: "mann-yadanarpon-airlines.jpeg",
+          name: "Mann Yadanarpon Airline",
+          link: "dragon-air",
+        },
+        {
+          id: "4",
+          image_url: "myanmar-national-airlines.jpeg",
+          name: "Myanmar National Airlines",
+          link: "vietnam-airline",
+        },
+        {
+          id: "5",
+          image_url: "yangon-airways.jpeg",
+          name: "Yangon Airways",
+          link: "malaysia-airline",
+        },
+      ],
+    },
   },
 ];
 
@@ -121,85 +165,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {
@@ -383,85 +403,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {
@@ -645,85 +641,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {
@@ -907,85 +879,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {
@@ -1169,85 +1117,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {
@@ -1431,85 +1355,61 @@ export const partners = [
       title: "Popular Route",
       route: [
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Mandalay",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Heho",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Nyaung U",
         },
         {
-          from: "YGN",
-          to: "BGN",
+          from: "Yangon",
+          to: "Thandwe",
         },
         {
-          from: "YGN",
-          to: "JPN",
+          from: "Yangon",
+          to: "Myeik",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Nay Pyi Taw",
         },
         {
-          from: "YGN",
-          to: "NPW",
+          from: "Yangon",
+          to: "Dawei",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Kawthaung",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Ho Chi Minh",
         },
         {
-          from: "YGN",
-          to: "MYK",
+          from: "Yangon",
+          to: "Japan",
         },
         {
-          from: "YGN",
-          to: "MDY",
+          from: "Yangon",
+          to: "Laos",
         },
         {
-          from: "MDY",
-          to: "YGN",
+          from: "Yangon",
+          to: "Singapore",
         },
         {
-          from: "YGN",
-          to: "SIG",
+          from: "Yangon",
+          to: "Korea",
         },
         {
-          from: "YGN",
-          to: "BGN",
-        },
-        {
-          from: "YGN",
-          to: "JPN",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "NPW",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
-        {
-          from: "YGN",
-          to: "MYK",
-        },
+          from: "Yangon",
+          to: "Bangkok",
+        },        
       ],
     },
     popular_cities: {

@@ -104,7 +104,6 @@ class PopularCities extends Component {
             </AliceCarousel>
           )}
         </div>
-        <hr></hr>
       </div>
     );
   }
