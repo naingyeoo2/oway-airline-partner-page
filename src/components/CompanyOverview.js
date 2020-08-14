@@ -19,7 +19,7 @@ class CompanyOverview extends Component {
     this.state.isShowMore ? "overview-text active" : "overview-text";
   render() {
     return (
-      <div className="company-overview">
+      <div className="company-overview"id="overview">
         <div className="overview">
           <center>
             <h2>Company Overview</h2>

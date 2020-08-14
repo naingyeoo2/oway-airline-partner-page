@@ -6,7 +6,7 @@ import FaqCard from "./FaqCard";
 class FAQ extends Component {
   render() {
     return (
-      <div className="faq">
+      <div className="faq" id="faqs">
         <div className="app-container">
           <div className="faq">
             <center>

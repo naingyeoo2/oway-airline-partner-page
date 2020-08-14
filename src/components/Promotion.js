@@ -23,7 +23,7 @@ class Promotion extends Component {
   //   }
   render() {
     return (
-      <div className="promotion">
+      <div className="promotion" id="promotions">
         <div className="app-container">
           <center>
             <h2>{this.props.promotion && this.props.promotion.title}</h2>

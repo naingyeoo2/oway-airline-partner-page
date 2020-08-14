@@ -29,7 +29,7 @@ class PopularCities extends Component {
 
   render() {
     return (
-      <div className="popular-cities">
+      <div className="popular-cities" id="popular-cities">
         <div className="app-container">
           <center>
             <h2>

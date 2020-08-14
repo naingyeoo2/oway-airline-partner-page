@@ -7,6 +7,18 @@
 .nav-bar-wrapper{
     margin-bottom: 20px;
 }
+
+// .nav-bar-wrapper.nav-fixed {
+//     width: 100%;
+//     background-color: #fff;
+//     box-shadow: 0 4px 8px 0 rgba(69,88,115,.12);
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 100;
+//     transition: all .5s ease-in-out;
+// }
+
 nav{
     display: block;
 }
@@ -56,4 +68,7 @@ ul li{
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
+}
+.nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
+    text-decoration: none;
 }
