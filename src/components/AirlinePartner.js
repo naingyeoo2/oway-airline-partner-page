@@ -12,9 +12,7 @@ import PopularRoute from "./PopularRoute";
 import PopularCities from "./PopularCities";
 import PopularAirlines from "./PopularAirlines";
 import FAQ from "./FAQ";
-import TermAndCondition from "./TermAndCondition";
-import PrivacyAndPolicy from "./PrivacyAndPolicy";
-import BaggageAndFees from "./BaggageAndFees";
+import TPBGroup from "./TPBGroup";
 
 class AirlinePartner extends Component {
   constructor(props) {
@@ -49,14 +47,11 @@ class AirlinePartner extends Component {
             <PopularCities popularCities={this.state.popular_cities} />
             <PopularAirlines path={this.props.match.params.partnerSlug} />
             <PopularRoute popularRoute={this.state.popular_route} />
-
-            <TermAndCondition
+            <TPBGroup
               termAndCondition={this.state.term_and_condition}
-            />
-            <PrivacyAndPolicy
               privacyAndPolicy={this.state.privacy_and_policy}
+              baggageAndFees={this.state.baggage_and_fees}
             />
-            <BaggageAndFees baggageAndFees={this.state.baggage_and_fees} />
           </div>
         )}
         <Footer />

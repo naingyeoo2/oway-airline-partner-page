@@ -1,18 +1,20 @@
 import React, { Component } from "react";
 import "./app-container.scss";
-import './baggage-and-fees.scss'
+import "./baggage-and-fees.scss";
 
 class BaggageANdFees extends Component {
   render() {
     return (
-      <div className="app-container">
-        <div className="baggage">
-          <h2>
-            {this.props.baggageAndFees && this.props.baggageAndFees.title}
-          </h2>
-          <p>
-            {this.props.baggageAndFees && this.props.baggageAndFees.description}
-          </p>
+      <div className="baggage-and-fees">
+        <h3>{this.props.baggageAndFees && this.props.baggageAndFees.title}</h3>
+        <hr></hr>
+        <div className="facts-last">
+          <ol>
+            {this.props.baggageAndFees &&
+              this.props.baggageAndFees.description.map((description) => (
+                <li><span>{description.id}.</span>{description.description}</li>
+              ))}
+          </ol>
         </div>
       </div>
     );

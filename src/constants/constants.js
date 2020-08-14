@@ -1,7 +1,7 @@
 export const airlines = [
   {
     international: {
-      id:"1",
+      id: "1",
       title: "International",
       airline_partner: [
         {
@@ -43,7 +43,7 @@ export const airlines = [
       ],
     },
     domestic: {
-      id:"2",
+      id: "2",
       title: "Domestic",
       airline_partner: [
         {
@@ -219,7 +219,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -306,18 +306,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
   {
@@ -457,7 +509,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -544,18 +596,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
   {
@@ -695,7 +799,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -782,18 +886,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
   {
@@ -933,7 +1089,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -1020,18 +1176,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
   {
@@ -1171,7 +1379,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -1258,18 +1466,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
   {
@@ -1409,7 +1669,7 @@ export const partners = [
         {
           from: "Yangon",
           to: "Bangkok",
-        },        
+        },
       ],
     },
     popular_cities: {
@@ -1496,18 +1756,70 @@ export const partners = [
     },
     term_and_condition: {
       title: "Term and Conditions",
-      description:
-        "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data. This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information. We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices.",
+      description:[
+        {
+          id: "1",
+          description: "In order to provide you with the best experience when using our system, we may collect, use, disclose, process and protect your personal identifiable information or personal data."
+        },
+        {
+          id: "2",
+          description: "This privacy policy describes the types of personal information we collect, how we use the information, with whom we share it, and the choices you can make about our collection, use and disclosure of the information."
+        },
+        {
+          id: "3",
+          description: "We also describe the measures we take to protect the security of the information and how you can contact us about our privacy practices."
+        }
+      ]
     },
     privacy_and_policy: {
       title: "Privacy and Policy",
-      description:
-        "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology. If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy. Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices. If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site. You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification.",
+      description: [
+        {
+          id: "1",
+          description: "From time to time, Oway Travel may revise this Privacy Policy to reflect changes in the laws and regulations, our use practices, the features of our Site and/or advances in technology."
+        },
+        {
+          id: "2",
+          description: "If we make revisions that change the way we collector use your Personal Data, those changes will be posted in this Privacy Policy and the effective date will be noted at the beginning of this Privacy Policy."
+        },
+        {
+          id: "3",
+          description: "Therefore, you should review this Privacy Policy periodically so that you are up to date on our most current policies and practices."
+        },
+        {
+          id: "4",
+          description: "If you do not agree with any changes or modifications to the Privacy Policy, please do not continue using the Site."
+        },
+        {
+          id: "5",
+          description: "You will be deemed to have consented to any modification of the Privacy Policy when you use the Site after the effective date of the modification."
+        }
+      ]
     },
     baggage_and_fees: {
       title: "Baggage and Fees",
-      description:
-        'We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the "Site" ). By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us. Personal data here refers to any information which are related to an identified or identifiable natural person ("Personal Data"). By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use. Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate.',
+      description: [
+        {
+          id: "1",
+          description: "We believe you should be informed about what kind of personal data we collect and how we use it in our system, both through our website and/or app (the 'Site' )."
+        },
+        {
+          id: "2",
+          description: "By reading this Privacy Policy, you can always make the best decision about the personal data that you share with us."
+        },
+        {
+          id: "3",
+          description: "Personal data here refers to any information which are related to an identified or identifiable natural person ('Personal Data')."
+        },
+        {
+          id: "4",
+          description: "By registering to and/ or using the Site, you acknowledge that you have read this Privacy Policy and the Oway Travel Terms of Use and understand their content and consequences, and you agree and give consent to Us for the collection, use, disclosure and processing of your Personal Details accordance with this Privacy Policy and/or the Terms of Use."
+        },
+        {
+          id: "5",
+          description: "Further, you acknowledge that every Personal Data that you have provided or will provide is yours to share and is true and accurate."
+        }
+      ]
     },
   },
 ];

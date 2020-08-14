@@ -10,8 +10,6 @@ $cardHeight: 50px;
 $floatLeft: left;
 
 .airline-card{
-    // width: $cardWidth;
-    // height: $cardHeight;
     background-color: $primaryColor;
     padding: 5px;
     // margin: 5px;
@@ -38,25 +36,12 @@ $floatLeft: left;
 }
 .airline-image{
     padding: 5px;
-    // width: 20%;
-    // height: 100%;
-    // float: $floatLeft;
-    // font-size: 24px;
-    // font-weight: 100;
-    // padding-top: 3px;
 }
 .airline-name{
     padding: 5px;
     text-align: left;
-    // height: 100%;
-    // float: $floatLeft;
-    // margin-top: 15px;
 }
 .link{
     padding: 5px;
-    // height: 100%;
-    // float: $floatLeft;  
-    // text-align: center;
-    // margin-top: 15px;
     color: #27e;
 }

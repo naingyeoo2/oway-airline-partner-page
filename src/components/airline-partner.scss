@@ -2,10 +2,6 @@
     margin: 0px;
     padding: 0px;
 }
-// .airline-partner{
-//     margin: 0 auto;
-//     max-width: 1170px;
-// }
 h1{
     text-transform: uppercase;
 }
@@ -17,7 +13,36 @@ h2{
     font-weight: 600;
     letter-spacing: 1px;
 }
-
 h3{
     color: #242A3A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 2em;
+}
+.facts ol{
+    list-style: none;
+}
+.facts ol li{
+    display: flex;
+}
+.facts span{
+    margin-right: 15px;
+}
+.facts-last{
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 2em;
+}
+.facts-last ol{
+    list-style: none;
+}
+.facts-last ol li{
+    display: flex;
+}
+.facts-last span{
+    margin-right: 15px;
 }

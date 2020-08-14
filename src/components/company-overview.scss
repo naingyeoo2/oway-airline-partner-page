@@ -8,13 +8,6 @@
 .company-overview {
   background-color: #e4e6e5;
 }
-// .company-overview .show-more{
-//     text-align: center;
-//     text-decoration: underline;
-//     color: blue;
-//     cursor: pointer;
-//     position: relative;
-// }
 .more-overview-text {
   line-height: 2em;
   max-width: 50%;
@@ -41,7 +34,6 @@
   text-align: center;
   padding-top: 4px;
   display: block;
-  // float: left;
   width: 100%;
 }
 .company-overview .show-more span {
@@ -62,12 +54,6 @@
   
   margin-right: 10px;
 }
-// .down-arrow::before{
-//   content: url('../assets/images/svg/down-arrow.svg');
-// }
-// .down-arrow::before{
-//   fill: #0a56bb;
-// }
 .arrow {
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -90,46 +76,3 @@
   -webkit-transform: rotate(45deg);
   margin-bottom: 0;
 }
-
-// .overview p .ellipsis-text{
-//     // padding: 10px;
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: 2; /* number of lines to show */
-//     -webkit-box-orient: vertical;
-//     // border: 1px solid black;
-// }
-// .overview p .ellipsis-text
-// .company-overview {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: 2; /* number of lines to show */
-//     -webkit-box-orient: vertical;
-//  }
-// .overview-text {
-//   position: relative;
-//   display: flex;
-//   flex-wrap: wrap;
-//   color: black;
-//   text-align: justify;
-//    /* Could be anything you like. */
-// }
-
-// .overview-text-concat {
-//   position: relative;
-//   display: inline-block;
-//   word-wrap: break-word;
-//   overflow: hidden;
-//   max-height: 3.6em; /* (Number of lines you want visible) * (line-height) */
-//   line-height: 1.2em;
-//   text-align: justify;
-// }
-
-// .overview-text.ellipsis::after {
-//   content: "...";
-//   position: absolute;
-//   right: -12px;
-//   bottom: 4px;
-// }
