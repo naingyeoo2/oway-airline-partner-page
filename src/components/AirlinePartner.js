@@ -13,6 +13,7 @@ import PopularCities from "./PopularCities";
 import PopularAirlines from "./PopularAirlines";
 import FAQ from "./FAQ";
 import TPBGroup from "./TPBGroup";
+import PartnerNavBar from "./PartnerNavBar";
 
 class AirlinePartner extends Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class AirlinePartner extends Component {
         ) : (
           <div>
             <PartnerCard name={this.state.name} image={this.state.img_url} />
+            <PartnerNavBar />
             <CompanyOverview overview={this.state.overview} />
             <FAQ faq={this.state.faq} />
             <Promotion promotion={this.state.promotion} />

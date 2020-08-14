@@ -2,32 +2,30 @@
   margin: 0;
   padding: 0;
 }
-.overview{
+.overview {
   background-color: #fff;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .company-overview {
   background-color: #e4e6e5;
 }
-.more-overview-text {
-  line-height: 2em;
-  max-width: 50%;
-  text-align: center;
-  transition: 5s all ease-in;
-  padding: 5px;
-}
+
 .overview-text {
   line-height: 2em;
   max-width: 50%;
   text-align: center;
   overflow: hidden;
-  text-overflow: ellipsis;
-  max-height: 200px;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  // text-overflow: ellipsis;
+  height: 140px;
   position: relative;
-  transition: 5s all ease-in;
-  padding: 5px;
+  transition: 0.4s all ease-in;
+  padding: 20px;
+}
+.overview-text.active {
+  height: 400px;
+  transition: 0.4s all ease-in;
 }
 .company-overview .show-more {
   background: #e4e6e5;
@@ -51,7 +49,6 @@
   background: #f7f7f7;
 }
 .down-arrow {
-  
   margin-right: 10px;
 }
 .arrow {
