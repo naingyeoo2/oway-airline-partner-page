@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+
 import TermAndCondition from "./TermAndCondition";
 import PrivacyAndPolicy from "./PrivacyAndPolicy";
 import BaggageAndFees from "./BaggageAndFees";
+
 import './tpb-group.scss'
 
 class TPBGroup extends Component {

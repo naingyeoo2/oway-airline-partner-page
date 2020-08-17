@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import "./app-container.scss";
+
 import "./popular-airlines.scss";
+
 import { airlines } from "../constants/constants";
+
 import PopularAirlineCard from "./PopularAirlineCard";
 
 class PopularAirlines extends Component {

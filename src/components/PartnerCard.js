@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./partner-card.scss";
 
 class PartnerCard extends Component {

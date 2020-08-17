@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import './popular-route-card.scss';
 
 class PopularRouteCard extends Component {

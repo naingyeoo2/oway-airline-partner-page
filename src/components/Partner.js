@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+
 import Header from './Header'
 import NavBar from './NavBar'
 import Cover from './Cover'
-import Home from './Home'
 import Footer from './Footer'
-import './partner.scss'
 import AirlinePartner from './AirlinePartner'
+
+import './partner.scss'
 
 export default class Partner extends Component {
     render() {

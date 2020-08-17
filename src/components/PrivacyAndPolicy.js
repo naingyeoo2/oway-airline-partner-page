@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./app-container.scss";
+
 import "./privacy-and-policy.scss";
 
 class PrivacyAndPolicy extends Component {

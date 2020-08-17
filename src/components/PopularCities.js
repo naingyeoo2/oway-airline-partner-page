@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import "./app-container.scss";
-import "./popular-cities.scss";
-import PopularCitiesCard from "./PopularCitiesCard";
-
 import AliceCarousel from "react-alice-carousel";
+
+import "./popular-cities.scss";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./popular-cities.scss";
+
+import PopularCitiesCard from "./PopularCitiesCard";
 
 class PopularCities extends Component {
   constructor(props) {

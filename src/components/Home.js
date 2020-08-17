@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./flights.scss";
+
 import "./home.scss";
+
 import PopularAirlines from "./PopularAirlines";
 import Header from "./Header";
 import NavBar from "./NavBar";

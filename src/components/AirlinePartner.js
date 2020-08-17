@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+
+import { partners } from "../constants/constants";
+
+import "./airline-partner.scss";
+
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { partners } from "../constants/constants";
 import PartnerCard from "./PartnerCard";
 import Promotion from "./Promotion";
-import "./airline-partner.scss";
 import CompanyOverview from "./CompanyOverview";
 import PopularRoute from "./PopularRoute";
 import PopularCities from "./PopularCities";

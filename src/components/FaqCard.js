@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./faq-card.scss";
 
 class FaqCard extends Component {

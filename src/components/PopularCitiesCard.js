@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./popular-cities-card.scss";
 
 class PopularCitiesCard extends Component {

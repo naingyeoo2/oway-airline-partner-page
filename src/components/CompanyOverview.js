@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import "./company-overview.scss";
-import "./app-container.scss";
 
 class CompanyOverview extends Component {
   constructor(props) {
@@ -19,27 +18,32 @@ class CompanyOverview extends Component {
     this.state.isShowMore ? "overview-text active" : "overview-text";
   render() {
     return (
-      <div className="company-overview"id="overview">
-        <div className="overview">
-          <center>
-            <h2>Company Overview</h2>
+      <div className="overview-wrap content-padding overview" id="overview">
+        <div className="app-container">
+          <h2>{this.props.overview && this.props.overview.title}</h2>
+
+          <div className="overview-text-wrap">
             <div className={this.overview()}>
-              {this.props.overview && this.props.overview.description}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html:
+                    this.props.overview && this.props.overview.description,
+                }}
+              ></div>
             </div>
-            <div className="show-more" title="Company Overview">
-              {this.state.isShowMore ? (
-                <span onClick={() => this.showMore()}>
-                  <i className="arrow up"></i>Show Less
-                </span>
-              ) : (
-                <span onClick={() => this.showMore()}>
-                  <i className="arrow down"></i>Show More
-                </span>
-              )}
-            </div>
-          </center>
+          </div>
+          <div className="show-more" title="Company Overview">
+            {this.state.isShowMore ? (
+              <span onClick={() => this.showMore()}>
+                <i className="arrow up"></i>Show Less
+              </span>
+            ) : (
+              <span onClick={() => this.showMore()}>
+                <i className="arrow down"></i>Show More
+              </span>
+            )}
+          </div>
         </div>
-        <hr></hr>
       </div>
     );
   }

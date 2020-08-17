@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./term-and-condition.scss";
 
 class TermAndCondition extends Component {

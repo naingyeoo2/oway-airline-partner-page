@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import "./flights.scss";
-import { Link, Router } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 class Flights extends Component {
   constructor(props) {

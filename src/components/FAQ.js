@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./app-container.scss";
+
 import "./faq.scss";
+
 import FaqCard from "./FaqCard";
 
 class FAQ extends Component {

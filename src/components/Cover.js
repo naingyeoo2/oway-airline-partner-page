@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./cover.scss";
 
 class Cover extends Component {

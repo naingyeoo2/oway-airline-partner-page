@@ -1,58 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
+.overview-wrap {
+  background-color: #fff;
 }
 .overview {
-  background-color: #fff;
-  max-width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(0deg, #f9f9f9 0%, rgba(249,249,249,0) 100%);
 }
-.company-overview {
-  background-color: #e4e6e5;
+.overview-wrap .overview-text-wrap{
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-
-.overview-text {
-  line-height: 2em;
+.overview-wrap .overview-text {
+  line-height: 30px;
   max-width: 50%;
+  margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  // text-overflow: ellipsis;
-  height: 140px;
+  height: 150px;
   position: relative;
   transition: 0.4s all ease-in;
-  padding: 20px;
 }
-.overview-text.active {
-  height: 400px;
+.overview-wrap .overview-text.active {
+  height: 420px;
   transition: 0.4s all ease-in;
 }
-.company-overview .show-more {
-  background: #e4e6e5;
+.overview-wrap .show-more {
   text-align: center;
-  padding-top: 4px;
   display: block;
   width: 100%;
 }
-.company-overview .show-more span {
+.overview-wrap .show-more span {
   cursor: pointer;
   background: #ffffff;
   padding: 7px 28px;
   z-index: 1;
   text-transform: capitalize;
   color: #0a56bb;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0px 2px 1px #c5c5c5;
+  border-radius: 50px;
+  box-shadow: 0px 2px 8px 0px #0000002e;
+  border: 2px solid;
 }
-.company-overview .show-more span:hover {
+.overview-wrap .show-more span:hover {
   background: #f7f7f7;
 }
-.down-arrow {
+.overview-wrap .down-arrow {
   margin-right: 10px;
 }
-.arrow {
-  border: solid black;
+.overview-wrap .arrow {
+  border: solid #0a56bb;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
@@ -62,14 +56,14 @@
   margin-right: 10px;
 }
 
-.up {
+.overview-wrap .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
-  margin-bottom: 0;
+  margin-bottom: 1;
 }
 
-.down {
+.overview-wrap .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin-bottom: 0;
+  margin-bottom: 2;
 }

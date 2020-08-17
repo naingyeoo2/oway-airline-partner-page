@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import "./popular-airline-card.scss";
-import { Link, Router } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 class PopularAirlineCard extends Component {
   render() {

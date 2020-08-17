@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./app-container.scss";
 import "./baggage-and-fees.scss";
 
 class BaggageANdFees extends Component {

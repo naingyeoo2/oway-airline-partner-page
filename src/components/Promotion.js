@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+
 import "./promotion.scss";
-import "./app-container.scss";
+
 import PromotionCard from "./PromotionCard";
 
 class Promotion extends Component {

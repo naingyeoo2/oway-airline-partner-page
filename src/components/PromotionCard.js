@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./promotion-card.scss";
 
 class PromotionCard extends Component {
