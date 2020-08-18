@@ -3,7 +3,6 @@
   height: 300px;
   cursor: pointer;
   padding: 5px;
-  // background: gray;
 }
 .city-image {
   height: 92%;
@@ -22,13 +21,9 @@
 .city-name{
   height: 8%;
   margin-top: 10px;
-  
-  // color: black;
-  // padding: 5px;
 }
 .city-name span{
   color: black;
-  // padding: 5px;
   transition: 0.3s all ease-out;
   text-align: left;
   font-weight: bold;
@@ -39,7 +34,6 @@
   font-weight: bold;
   border-left: 2px solid #FAA534;
   padding-left: 10px;
-  
   transition: 0.3s all ease-out;
 }
 

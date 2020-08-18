@@ -5,30 +5,31 @@ import "./faq.scss";
 import FaqCard from "./FaqCard";
 
 class FAQ extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { key: 0 };
+  }
   render() {
     return (
-      <div className="faq" id="faqs">
+      <div className="faq-wrap content-padding" id="faqs">
         <div className="app-container">
-          <div className="faq">
-            <center>
-              <h2>{this.props.faq && this.props.faq.title}</h2>
-              <div className="header-title">
-                <small>
-                  <span className="faq-quote">this is faq section</span>
-                </small>
-              </div>
-            </center>
-            <div>
-              <ul>
-                {this.props.faq &&
-                  this.props.faq.questions.map((question, index) => (
-                    <FaqCard question={question} key={index} />
-                  ))}
-              </ul>
-            </div>
+          <h2 className="header-title">
+            <span>{this.props.faq && this.props.faq.title}</span>
+            <small>this is faq section</small>
+          </h2>
+          <div>
+            <ul>
+              {this.props.faq &&
+                this.props.faq.questions.map((question, index) => (
+                  <FaqCard
+                    question={question}
+                    key={index}
+                    showKey={(index) => this.setState({ key: index })}
+                  />
+                ))}
+            </ul>
           </div>
         </div>
-        <hr></hr>
       </div>
     );
   }

@@ -1,7 +1,5 @@
 .overview-wrap {
   background-color: #fff;
-}
-.overview {
   border-bottom: 1px solid #ccc;
   background: linear-gradient(0deg, #f9f9f9 0%, rgba(249,249,249,0) 100%);
 }
@@ -20,7 +18,7 @@
   transition: 0.4s all ease-in;
 }
 .overview-wrap .overview-text.active {
-  height: 420px;
+  height: 360px;
   transition: 0.4s all ease-in;
 }
 .overview-wrap .show-more {
@@ -55,15 +53,13 @@
   vertical-align: center;
   margin-right: 10px;
 }
-
 .overview-wrap .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
-  margin-bottom: 1;
+  margin-bottom: 0;
 }
-
 .overview-wrap .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin-bottom: 2;
+  margin-bottom: 3px;
 }

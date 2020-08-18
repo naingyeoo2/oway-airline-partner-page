@@ -1,16 +1,10 @@
-.popular-route{
+.popular-route-wrap{
     background: url('../assets/images/jpg/pupular-route-bg.jpg');
-    padding-top: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
-.popular-route h2{
+.popular-route-wrap h2{
     color: #fff;
-}
-.for-route-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
 }

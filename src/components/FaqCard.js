@@ -6,32 +6,39 @@ class FaqCard extends Component {
   constructor(pros) {
     super(pros);
     this.state = {
-      isShow: true,
+      isShow: false,
+      showKey: 0
     };
   }
+
+  componentDidMount(){
+    (this.props.showKey === this.state.showKey) ? 
+      this.setState({isShow:true})
+      :
+      this.setState({isShow:false})
+  }
   isShowText = () => {
-    this.state.isShow
-      ? this.setState({ isShow: false })
-      : this.setState({ isShow: true });
+    this.state.isShow?
+    this.setState({isShow:false})
+    :
+    this.setState({isShow:true})
   };
+  arrow = () => (this.state.isShow ? "arrow down" : "arrow right");
+
   render() {
     return (
-      <li>
+      <li onClick={() => this.isShowText()}>
         <div className="faq-card">
-          <h3 className="question" onClick={() => this.isShowText()}>
-            {this.props.question.question}&nbsp;
+          <h3 className="question">
+            {this.props.question.question}
             <span>
-              {this.state.isShow ? (
-                <i className="arrow down"></i>
-              ) : (
-                <i className="arrow right"></i>
-              )}
+              <i className={ this.arrow()}></i>
             </span>
           </h3>
           {this.state.isShow ? (
             <p className="show-answer">{this.props.question.answer}</p>
           ) : (
-            <p className="dont-show-answer">{this.props.question.answer}</p>
+            <p className="hide-answer">{this.props.question.answer}</p>
           )}
         </div>
       </li>

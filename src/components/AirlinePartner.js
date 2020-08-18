@@ -28,7 +28,7 @@ class AirlinePartner extends Component {
     const path = this.props.match.params.partnerSlug;
 
     this.setState({ isLoading: true });
-    const filteredArray = partners.filter((partner) => partner.keyword == path);
+    const filteredArray = partners.filter((partner) => partner.keyword === path);
     this.setState(filteredArray[0]);
     setTimeout(() => {
       this.setState({ isLoading: false });

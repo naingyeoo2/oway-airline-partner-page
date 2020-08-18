@@ -18,9 +18,12 @@ class CompanyOverview extends Component {
     this.state.isShowMore ? "overview-text active" : "overview-text";
   render() {
     return (
-      <div className="overview-wrap content-padding overview" id="overview">
+      <div className="overview-wrap content-padding" id="overview">
         <div className="app-container">
-          <h2>{this.props.overview && this.props.overview.title}</h2>
+          <h2 className="header-title">
+            <span>{this.props.overview && this.props.overview.title}</span>
+            <small>this is company overview</small>
+          </h2>
 
           <div className="overview-text-wrap">
             <div className={this.overview()}>

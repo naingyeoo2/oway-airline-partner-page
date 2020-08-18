@@ -13,8 +13,8 @@ class PrivacyAndPolicy extends Component {
         <div className="facts">
           <ol>
             {this.props.privacyAndPolicy &&
-              this.props.privacyAndPolicy.description.map((description) => (
-                <li><span>{description.id}.</span>{description.description}</li>
+              this.props.privacyAndPolicy.description.map((description, index) => (
+                <li key={index}><span>{description.id}.</span>{description.description}</li>
               ))}
           </ol>
         </div>

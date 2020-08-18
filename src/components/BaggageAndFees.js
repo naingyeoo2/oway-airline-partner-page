@@ -10,8 +10,8 @@ class BaggageANdFees extends Component {
         <div className="facts-last">
           <ol>
             {this.props.baggageAndFees &&
-              this.props.baggageAndFees.description.map((description) => (
-                <li><span>{description.id}.</span>{description.description}</li>
+              this.props.baggageAndFees.description.map((description, index) => (
+                <li key={index}><span>{description.id}.</span>{description.description}</li>
               ))}
           </ol>
         </div>

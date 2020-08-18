@@ -10,7 +10,7 @@ class PopularAirlineCard extends Component {
       <Link
         to={`partner/${this.props.airline.link}`}
         style={
-          this.props.path == this.props.airline.link ? { display: "none" } : {}
+          this.props.path === this.props.airline.link ? { display: "none" } : {}
         }
       >
         <span className="popular-airline-card">
@@ -18,6 +18,7 @@ class PopularAirlineCard extends Component {
             src={require(`../assets/images/jpeg/${this.props.airline.image_url}`)}
             width="40px"
             height="auto"
+            alt=""
           />
         </span>
       </Link>

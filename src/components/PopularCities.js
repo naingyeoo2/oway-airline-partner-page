@@ -15,11 +15,6 @@ class PopularCities extends Component {
       isDomestic: false,
     };
   }
-  // state = {
-  //   currentIndex: 0,
-  //   // galleryItems: [1, 2, 3].map((i) => <h2 key={i}>{i}</h2>),
-  // };
-
   changeTabInternational = () =>
     this.setState({ isInternational: true, isDomestic: false });
   changeTabDomestic = () =>
@@ -29,17 +24,13 @@ class PopularCities extends Component {
 
   render() {
     return (
-      <div className="popular-cities" id="popular-cities">
+      <div className="popular-cities-wrap content-padding" id="popular-cities">
         <div className="app-container">
           <center>
-            <h2>
+            <h2 className="header-title">
               {this.props.popularCities && this.props.popularCities.title}
+              <small>most popular places</small>
             </h2>
-            <div className="header-title">
-              <small>
-                <span className="faq-quote">most popular places</span>
-              </small>
-            </div>
             <div className="city-toggle">
               {this.props.popularCities && (
                 <span
@@ -67,8 +58,6 @@ class PopularCities extends Component {
           {this.state.isInternational ? (
             <AliceCarousel
               mouseTrackingEnabled
-              // items={this.state.galleryItems}
-              responsive={this.responsive}
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{
@@ -86,8 +75,6 @@ class PopularCities extends Component {
           ) : (
             <AliceCarousel
               mouseTrackingEnabled
-              // items={this.state.galleryItems}
-              responsive={this.responsive}
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{

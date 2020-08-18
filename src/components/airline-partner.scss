@@ -1,48 +1,63 @@
-
 .content-padding {
-    padding: 50px 0 105px;
+  padding: 50px 0 105px;
 }
-h1{
-    text-transform: uppercase;
+h1 {
+  text-transform: uppercase;
 }
-h2{
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #242A3A;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom: 20px;
+h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #242a3a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
 }
-h3{
-    color: #242A3A;
+h3 {
+  color: #242a3a;
 }
-
-.facts{
-    margin-top: 15px;
-    margin-bottom: 25px;
-    line-height: 2em;
+.header-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #242a3a;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
-.facts ol{
-    list-style: none;
+.header-title small {
+  color: #faa534;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
 }
-.facts ol li{
-    display: flex;
+.facts {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  line-height: 2em;
 }
-.facts span{
-    margin-right: 15px;
+.facts ol {
+  list-style: none;
 }
-.facts-last{
-    margin-top: 15px;
-    margin-bottom: 0;
-    line-height: 2em;
+.facts ol li {
+  display: flex;
 }
-.facts-last ol{
-    list-style: none;
+.facts span {
+  margin-right: 15px;
 }
-.facts-last ol li{
-    display: flex;
+.facts-last {
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 2em;
 }
-.facts-last span{
-    margin-right: 15px;
+.facts-last ol {
+  list-style: none;
+}
+.facts-last ol li {
+  display: flex;
+}
+.facts-last span {
+  margin-right: 15px;
 }

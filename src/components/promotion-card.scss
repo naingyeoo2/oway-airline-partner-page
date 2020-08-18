@@ -1,28 +1,35 @@
 .promotion-card{
-    width: 23%;
+    flex: 0 23%;
     box-shadow: 0 0 6px #00000029;
     border-radius: 5px;
-    // margin-right: 10px;
     cursor: pointer;
     padding: 5px;
     background-color: #fff;
 }
 .promotion-card:hover{
-    box-shadow: 2px 2px 8px gray;
+    box-shadow: 2px 2px 6px gray;
 }
-.card-title{
+.promotion-card .card-content{
+}
+.promotion-card .card-content .card-info{
     padding: 10px;
-    color: #0a56bb;
+    border-bottom: 1px solid #00000029;
 }
-.card-content{
+.promotion-card .card-content .route span{
+    color: #0a56bb;
+    font-weight: bold;
+    font-size: 16px;
+}
+.promotion-card .card-discount{
     padding: 10px;
 }
-.card-content .route{
-    color: #0a56bb;
+.promotion-card .card-discount span{
+    font-size: 16px;
+    color: red;
 }
 @media only screen and (max-width: 991px) {
     .promotion-card {
-        width: 100%;
+        flex: 0 100%;
         margin-bottom: 20px;
     }
   }

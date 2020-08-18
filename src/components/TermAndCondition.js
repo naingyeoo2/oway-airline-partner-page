@@ -13,8 +13,8 @@ class TermAndCondition extends Component {
         <div className="facts">
           <ol>
             {this.props.termAndCondition &&
-              this.props.termAndCondition.description.map((description) => (
-                <li><span>{description.id}.</span>{description.description}</li>
+              this.props.termAndCondition.description.map((description, index) => (
+                <li key={index}><span>{description.id}.</span>{description.description}</li>
               ))}
           </ol>
         </div>

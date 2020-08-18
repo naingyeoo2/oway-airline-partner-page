@@ -3,9 +3,6 @@ import React, { Component } from "react";
 import "./popular-cities-card.scss";
 
 class PopularCitiesCard extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const style = {
       image: {

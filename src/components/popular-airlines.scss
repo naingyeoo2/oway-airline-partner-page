@@ -1,7 +1,3 @@
-.app-container111 {
-  max-width: 1170px;
-  margin: 0 auto;
-}
 .popular-airline {
   border-top: 1px dashed #bdbdbd;
   border-bottom: 1px dashed #bdbdbd;
@@ -18,14 +14,8 @@
 .popular-airline .airline-block .col-title .header-title {
   text-align: right;
 }
-.header-title small {
-  color: #faa534;
-  display: block;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: none;
-  line-height: 18px;
-  letter-spacing: 0;
+.popular-airline .airline-block .col-title .header-title small {
+  text-align: right;
 }
 .popular-airline .airline-block .col-image {
   flex: 1;

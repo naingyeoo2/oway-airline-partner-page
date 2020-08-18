@@ -8,7 +8,6 @@ class Promotion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      //   routeToggle: 'oneway',
       isOneway: true,
       isRoundTrip: false,
     };
@@ -16,49 +15,36 @@ class Promotion extends Component {
   changeTabOneway = () => this.setState({ isOneway: true, isRoundTrip: false });
   changeTabRoundTrip = () =>
     this.setState({ isOneway: false, isRoundTrip: true });
-  //   routeToggleOneway() {
-  //     this.setState({routeToggle: 'oneway'});
-  //   }
-  //   routeToggleRoundTrip() {
-  //     this.setState({routeToggle: 'rountTrip'});
-  //   }
   render() {
     return (
-      <div className="promotion" id="promotions">
+      <div className="content-padding promotion-wrap" id="promotions">
         <div className="app-container">
-          <center>
-            <h2>{this.props.promotion && this.props.promotion.title}</h2>
-            <div className="header-title">
-              <small>
-                <span className="promotion-quote">
-                  enjoy the great savings with us
-                </span>
-              </small>
-            </div>
+          <h2 className="header-title">
+            {this.props.promotion && this.props.promotion.title}
+            <small>enjoy the great savings with us</small>
+          </h2>
+          <div className="route-toggle">
+            {this.props.promotion && (
+              <span
+                className={this.state.isOneway ? "active" : "notactive"}
+                onClick={() => this.changeTabOneway()}
+              >
+                {this.props.promotion.one_way.title}
+              </span>
+            )}
 
-            <div className="route-toggle">
-              {this.props.promotion && (
-                <span
-                  className={this.state.isOneway ? "active" : "notactive"}
-                  onClick={() => this.changeTabOneway()}
-                >
-                  {this.props.promotion.one_way.title}
-                </span>
-              )}
-
-              {this.props.promotion && (
-                <span
-                  className={this.state.isOneway ? "notactive" : "active"}
-                  onClick={() => this.changeTabRoundTrip()}
-                >
-                  {this.props.promotion.round_trip.title}
-                </span>
-              )}
-            </div>
-          </center>
+            {this.props.promotion && (
+              <span
+                className={this.state.isOneway ? "notactive" : "active"}
+                onClick={() => this.changeTabRoundTrip()}
+              >
+                {this.props.promotion.round_trip.title}
+              </span>
+            )}
+          </div>
           {/*........... checking trip toggle oneway or round trip .............*/}
           {this.state.isOneway ? (
-            <div className="for-promotion-card">
+            <div className="promotion-card-block">
               {this.props.promotion &&
                 this.props.promotion.one_way.route.map((route, index) => (
                   <PromotionCard
@@ -69,7 +55,7 @@ class Promotion extends Component {
                 ))}
             </div>
           ) : (
-            <div className="for-promotion-card">
+            <div className="promotion-card-block">
               {this.props.promotion &&
                 this.props.promotion.round_trip.route.map((route, index) => (
                   <PromotionCard
@@ -81,7 +67,6 @@ class Promotion extends Component {
             </div>
           )}
         </div>
-        <hr></hr>
       </div>
     );
   }

@@ -6,11 +6,7 @@ class Cover extends Component {
   render() {
     return (
       <div>
-        <div className="cover">
-          
-        </div>
-        <br></br>
-        <br></br>
+        <div className="cover"></div>
       </div>
     );
   }

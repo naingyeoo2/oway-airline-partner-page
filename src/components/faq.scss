@@ -1,26 +1,8 @@
-.faq{
-    margin-bottom: 20px;
+.faq-wrap {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(0deg, #f9f9f9 0%, rgba(249, 249, 249, 0) 100%);
 }
-.faq ul{
-    list-style: none;
-}
-.faq .header-title{
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #242A3A;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
-}
-.faq .header-title small {
-    color: #FAA534;
-    display: block;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: none;
-    line-height: 18px;
-    letter-spacing: 0;
-}
-.faq .header-title span .faq-quote{
-    color: #faa534;
+.faq-wrap ul {
+  list-style: none;
 }

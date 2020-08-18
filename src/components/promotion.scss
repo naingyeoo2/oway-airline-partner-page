@@ -1,48 +1,34 @@
-.header-title{
-    text-transform: uppercase;
-    font-size: 25px;
-    color: #242A3A;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+.promotion-wrap {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  background: linear-gradient(0deg, #f9f9f9 0%, rgba(249, 249, 249, 0) 100%);
 }
-.header-title small {
-    color: #FAA534;
-    display: block;
-    font-size: 15px;
-    font-weight: 500;
-    text-transform: none;
-    line-height: 18px;
-    letter-spacing: 0;
+.promotion-wrap .promotion-card-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.header-title span .promotion-quote{
-    color: #faa534;
+.promotion-wrap .route-toggle {
+  margin-bottom: 20px;
+  text-align: center;
 }
-.for-promotion-card{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px;
+.promotion-wrap .route-toggle span {
+  cursor: pointer;
+  background: none;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 20px;
+  height: 40px;
+  transition: 0.3s all ease-out;
 }
-.route-toggle{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.route-toggle span{
-    cursor: pointer;
-    background: none;
-    font-size: 18px;
-    margin-right: 20px;
-    height: 40px;
-}
-.route-toggle span.active{
-    color: #404040;
-    border-bottom: 2px solid #faa534;
-    padding-bottom: 5px;
-    font-weight: bold;
-    height: 40px;
-    line-height: 38px;
-    padding-left: 0;
-    padding-right: 0;
-    transition: 0.3s all ease-out;
+.promotion-wrap .route-toggle span.active {
+  color: #404040;
+  border-bottom: 2px solid #faa534;
+  padding-bottom: 5px;
+  font-weight: bold;
+  height: 40px;
+  line-height: 38px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: 0.3s all ease-out;
 }

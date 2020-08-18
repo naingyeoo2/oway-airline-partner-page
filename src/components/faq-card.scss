@@ -1,5 +1,5 @@
 .faq-card {
-  margin: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   background-color: #fff;
   box-shadow: 0 0 6px #00000029;
@@ -9,43 +9,44 @@
 }
 .faq-card .question {
   cursor: pointer;
-  // padding-bottom: 5px;
-  padding: 5px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 30px;
+  transition: 0.3s all ease-in;
 }
 .faq-card .question span{
   float: right;
-  
 }
-.show-answer {
+.faq-card .show-answer{
   display: inline-block;
   padding: 5px;
   max-width: 95%;
-  line-height: 25px;
+  line-height: 30px;
+  transition: 1s all;
+  transition-duration: 1s;
 }
-.dont-show-answer {
+.faq-card .hide-answer {
   display: none;
+  transition: 1s all;
+  transition-duration: 1s;
 }
-.arrow {
+.faq-card .arrow {
   border: solid #0a56bb;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
   margin-right: 10px;
 }
-.right {
+.faq-card .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  margin-bottom: -2px;
-}
-
-.down {
+.faq-card .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin-bottom: 3px;
+  margin-bottom: 2px;
+}
+.faq-wrap li:hover .question{
+  color: #0a56bb;
+  transition: 0.3s all ease-in;
 }
