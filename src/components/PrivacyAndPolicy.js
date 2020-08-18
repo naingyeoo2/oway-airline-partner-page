@@ -6,10 +6,9 @@ class PrivacyAndPolicy extends Component {
   render() {
     return (
       <div className="privacy-and-policy">
-        <h3>
+        <h3 className="tpb-header">
           {this.props.privacyAndPolicy && this.props.privacyAndPolicy.title}
         </h3>
-        <hr></hr>
         <div className="facts">
           <ol>
             {this.props.privacyAndPolicy &&

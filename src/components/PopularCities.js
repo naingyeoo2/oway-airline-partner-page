@@ -26,35 +26,29 @@ class PopularCities extends Component {
     return (
       <div className="popular-cities-wrap content-padding" id="popular-cities">
         <div className="app-container">
-          <center>
-            <h2 className="header-title">
-              {this.props.popularCities && this.props.popularCities.title}
-              <small>most popular places</small>
-            </h2>
-            <div className="city-toggle">
-              {this.props.popularCities && (
-                <span
-                  className={
-                    this.state.isInternational ? "active" : "notactive"
-                  }
-                  onClick={() => this.changeTabInternational()}
-                >
-                  {this.props.popularCities.international.title}
-                </span>
-              )}
+          <h2 className="header-title">
+            {this.props.popularCities && this.props.popularCities.title}
+            <small>most popular places</small>
+          </h2>
+          <div className="city-toggle">
+            {this.props.popularCities && (
+              <span
+                className={this.state.isInternational ? "active" : "notactive"}
+                onClick={() => this.changeTabInternational()}
+              >
+                {this.props.popularCities.international.title}
+              </span>
+            )}
 
-              {this.props.popularCities && (
-                <span
-                  className={
-                    this.state.isInternational ? "notactive" : "active"
-                  }
-                  onClick={() => this.changeTabDomestic()}
-                >
-                  {this.props.popularCities.domestic.title}
-                </span>
-              )}
-            </div>
-          </center>
+            {this.props.popularCities && (
+              <span
+                className={this.state.isInternational ? "notactive" : "active"}
+                onClick={() => this.changeTabDomestic()}
+              >
+                {this.props.popularCities.domestic.title}
+              </span>
+            )}
+          </div>
           {this.state.isInternational ? (
             <AliceCarousel
               mouseTrackingEnabled
@@ -64,7 +58,7 @@ class PopularCities extends Component {
                 0: { items: 3 },
                 1024: { items: 6 },
               }}
-              autoPlay={true}
+              autoPlay={false}
               autoPlayInterval={3000}
             >
               {this.props.popularCities &&
@@ -81,7 +75,7 @@ class PopularCities extends Component {
                 0: { items: 3 },
                 1024: { items: 6 },
               }}
-              autoPlay={true}
+              autoPlay={false}
               autoPlayInterval={3000}
             >
               {this.props.popularCities &&

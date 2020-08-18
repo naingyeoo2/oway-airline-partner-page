@@ -22,7 +22,7 @@ class PopularAirlines extends Component {
               <h3>
                 <span>{airlines[0].international.title}</span>
               </h3>
-              <div>
+              <div className="popualr-airline-block">
                 {airlines[0].international.airline_partner.map((airline) => (
                   <PopularAirlineCard airline={airline} key={airline.id} />
                 ))}
@@ -32,7 +32,7 @@ class PopularAirlines extends Component {
               <h3>
                 <span>{airlines[0].domestic.title}</span>
               </h3>
-              <div>
+              <div className="popualr-airline-block">
                 {airlines[0].domestic.airline_partner.map((airline) => (
                   <PopularAirlineCard airline={airline} key={airline.id} />
                 ))}

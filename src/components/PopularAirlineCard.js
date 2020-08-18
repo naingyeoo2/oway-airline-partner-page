@@ -7,20 +7,19 @@ import { Link } from "react-router-dom";
 class PopularAirlineCard extends Component {
   render() {
     return (
-      <Link
+        <Link
         to={`partner/${this.props.airline.link}`}
         style={
           this.props.path === this.props.airline.link ? { display: "none" } : {}
         }
+        className="airline-card"
       >
-        <span className="popular-airline-card">
-          <img
-            src={require(`../assets/images/jpeg/${this.props.airline.image_url}`)}
-            width="40px"
-            height="auto"
-            alt=""
-          />
-        </span>
+        <img
+          src={require(`../assets/images/jpeg/${this.props.airline.image_url}`)}
+          width="35px"
+          height="auto"
+          alt=""
+        />
       </Link>
     );
   }

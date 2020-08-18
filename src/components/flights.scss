@@ -1,42 +1,35 @@
-$primaryColor: #ffff;
+// $primaryColor: #ffff;
 
-$cardWidth: 90%;
-$cardHeight: 50px;
-$floatLeft: left;
-
-.airline-card{
-    background-color: $primaryColor;
-    padding: 5px;
-    // margin: 5px;
-    border: 0px solid ;
-    border-radius: 4px;
-    // float: $floatLeft;
-    // overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 0 6px #00000029;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    display: flex;
-    flex: 0 31%;
-    text-decoration: none;
-    align-items: center;
-    justify-content: space-between;
-}
-.airline-card:nth-child(3n){
-    margin-right: 0;
-}
-.airline-card:hover{
-    box-shadow: 2px 2px 8px gray;
+// .airline-card{
+//     background-color: $primaryColor;
+//     padding: 5px;
+//     border: 0px solid ;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     box-shadow: 0 0 6px #00000029;
+//     margin-right: 25px;
+//     margin-bottom: 15px;
+//     display: flex;
+//     flex: 0 31%;
+//     text-decoration: none;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+// .airline-card:nth-child(3n){
+//     margin-right: 0;
+// }
+// .airline-card:hover{
+//     box-shadow: 2px 2px 8px gray;
     
-}
-.airline-image{
-    padding: 5px;
-}
-.airline-name{
-    padding: 5px;
-    text-align: left;
-}
-.link{
-    padding: 5px;
-    color: #27e;
-}
+// }
+// .airline-image{
+//     padding: 5px;
+// }
+// .airline-name{
+//     padding: 5px;
+//     text-align: left;
+// }
+// .link{
+//     padding: 5px;
+//     color: #27e;
+// }

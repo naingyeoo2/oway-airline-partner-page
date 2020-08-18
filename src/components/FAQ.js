@@ -7,7 +7,9 @@ import FaqCard from "./FaqCard";
 class FAQ extends Component {
   constructor(props) {
     super(props);
-    this.state = { key: 0 };
+    this.state = {
+      showItem: 0,
+    };
   }
   render() {
     return (
@@ -24,7 +26,11 @@ class FAQ extends Component {
                   <FaqCard
                     question={question}
                     key={index}
-                    showKey={(index) => this.setState({ key: index })}
+                    current={index}
+                    showItem={this.state.showItem}
+                    callbackParent={(currentItem) =>
+                      this.setState({ showItem: currentItem })
+                    }
                   />
                 ))}
             </ul>

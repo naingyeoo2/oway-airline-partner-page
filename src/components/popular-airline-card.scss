@@ -1,33 +1,4 @@
-$primaryColor: #ffff;
-
-$cardWidth: 90%;
-$cardHeight: 50px;
-$floatLeft: left;
-
-// .airline-card{
-//     background-color: $primaryColor;
-//     padding: 5px;
-//     border: 0px solid ;
-//     border-radius: 4px;
-//     cursor: pointer;
-//     box-shadow: 0 0 6px #00000029;
-//     margin-right: 25px;
-//     margin-bottom: 15px;
-//     display: flex;
-//     text-decoration: none;
-//     align-items: center;
-//     // justify-content: space-between;
-// }
-.popular-airline-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    display: inline;
-}
-.airline-image{
-    padding: 5px;
-}
-.popular-airline-card img {
-    border-style: none;
+.airline-card{
+    display: inline-block;
     margin: 15px 21px 0 0;
 }

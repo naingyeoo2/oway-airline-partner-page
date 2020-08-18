@@ -7,39 +7,34 @@ class FaqCard extends Component {
     super(pros);
     this.state = {
       isShow: false,
-      showKey: 0
     };
   }
 
   componentDidMount(){
-    (this.props.showKey === this.state.showKey) ? 
+    (this.props.current === this.props.showItem) ?
       this.setState({isShow:true})
       :
       this.setState({isShow:false})
   }
-  isShowText = () => {
-    this.state.isShow?
-    this.setState({isShow:false})
-    :
-    this.setState({isShow:true})
-  };
-  arrow = () => (this.state.isShow ? "arrow down" : "arrow right");
-
+  // isShowText = () => {
+  //   this.state.isShow
+  //     ? this.setState({ isShow: false })
+  //     : this.setState({ isShow: true });
+  // };
+  showArrow = () => (this.state.isShow ? "arrow down" : "arrow right");
+  getActiveItem = () =>
+    this.props.current === this.props.showItem ? "show-answer" : "hide-answer";
   render() {
     return (
-      <li onClick={() => this.isShowText()}>
+      <li onClick={() => this.props.callbackParent(this.props.current)}>
         <div className="faq-card">
           <h3 className="question">
             {this.props.question.question}
             <span>
-              <i className={ this.arrow()}></i>
+              <i className={this.showArrow()}></i>
             </span>
           </h3>
-          {this.state.isShow ? (
-            <p className="show-answer">{this.props.question.answer}</p>
-          ) : (
-            <p className="hide-answer">{this.props.question.answer}</p>
-          )}
+          <p className={this.getActiveItem()}>{this.props.question.answer}</p>
         </div>
       </li>
     );

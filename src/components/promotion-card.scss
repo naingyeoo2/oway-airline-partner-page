@@ -5,11 +5,10 @@
     cursor: pointer;
     padding: 5px;
     background-color: #fff;
+    transition: 0.3s all ease-in;
 }
 .promotion-card:hover{
-    box-shadow: 2px 2px 6px gray;
-}
-.promotion-card .card-content{
+    box-shadow: 4px 6px 7px rgb(192,192,192);
 }
 .promotion-card .card-content .card-info{
     padding: 10px;

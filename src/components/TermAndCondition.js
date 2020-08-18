@@ -6,10 +6,9 @@ class TermAndCondition extends Component {
   render() {
     return (
       <div className="term-and-condition">
-        <h3>
+        <h3 className="tpb-header">
           {this.props.termAndCondition && this.props.termAndCondition.title}
         </h3>
-        <hr></hr>
         <div className="facts">
           <ol>
             {this.props.termAndCondition &&

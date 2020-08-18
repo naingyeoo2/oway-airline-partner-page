@@ -162,7 +162,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -223,7 +223,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [
@@ -452,7 +452,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -513,7 +513,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [
@@ -742,7 +742,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -803,7 +803,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [
@@ -1032,7 +1032,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -1093,7 +1093,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [
@@ -1322,7 +1322,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -1383,7 +1383,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [
@@ -1612,7 +1612,7 @@ export const partners = [
         "Myanmar, also known as the Republic of the Union of Myanmar or Burma, is currently ranked as the 26th most populated country in the world with more than 54 million people residing in the country. With a land area of 653,508-kilometre square, Myanmar is also considered the biggest of the Mainland Southeast Asian states in terms of area. Out of the total population, around 89 percent of them are Buddhists. The capital city of Myanmar is Nay Pyi Taw while the largest city in the country is Yangon.<br> In terms of the best time to travel, the month between November and February is the recommended period as rainfall during these months are minimal and temperatures are cooler. The monsoon seasons which falls between mid-May and October should be avoided as rain is frequent during this time and can be inconvenient for travellers. November to February is another period that is fine for travelling, but visitors should note that the temperature during this time is hot and can go as high up as 40° C.",
     },
     popular_route: {
-      title: "Popular Route",
+      title: "Popular Routes",
       route: [
         {
           from: "Yangon",
@@ -1673,7 +1673,7 @@ export const partners = [
       ],
     },
     popular_cities: {
-      title: "Pupular Cities",
+      title: "Pupular Destination",
       international: {
         title: "International",
         cities: [

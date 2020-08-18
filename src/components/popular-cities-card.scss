@@ -1,11 +1,10 @@
 .city {
-  width: 95%;
-  height: 300px;
+  width: 92%;
+  height: 320px;
   cursor: pointer;
-  padding: 5px;
 }
-.city-image {
-  height: 92%;
+.city .city-image {
+  height: 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -15,25 +14,23 @@
 .city:hover .city-image{
     box-shadow: 0px 0px 5px gray;
     background-size: 110% 110%;
-    transition: 0.3s all ease-in;
 }
 
-.city-name{
-  height: 8%;
+.city .city-name{
+  height: 10%;
   margin-top: 10px;
+  transition: 0.3s all ease-in;
 }
-.city-name span{
-  color: black;
-  transition: 0.3s all ease-out;
+.city .city-name span{
+  color: rgba(0, 0, 0, 0.65);;
   text-align: left;
   font-weight: bold;
-  
+  transition: 0.3s all ease-in;
 }
 .city:hover .city-name span{
   color: #0a56bb;
   font-weight: bold;
   border-left: 2px solid #FAA534;
   padding-left: 10px;
-  transition: 0.3s all ease-out;
 }
 
