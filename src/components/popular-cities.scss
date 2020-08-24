@@ -13,7 +13,6 @@
     background: none;
     font-size: 18px;
     margin-right: 20px;
-    // margin-left: 10px;
     height: 40px;
     border-bottom: 1px solid #fff;
     transition: 0.3s all ease-out;
@@ -45,15 +44,15 @@
     top: 100px;
     width: auto !important;
     height: auto;
-    padding: 0;
+    padding: 0 !important;
 }
 .popular-cities-wrap .alice-carousel__prev-btn {
     text-align: left !important;
-    left: -15px;
+    left: -5px;
 }
 .popular-cities-wrap .alice-carousel__next-btn {
     text-align: right;
-    right: -15px;
+    right: -5px;
 }
 .popular-cities-wrap .alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
     display: inline-block;

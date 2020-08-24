@@ -7,18 +7,15 @@
   margin-bottom: 20px;
   overflow: hidden;
 }
-.overview-wrap .overview-text {
+.overview-wrap .overviewText {
   line-height: 30px;
   max-width: 50%;
   margin: 0 auto;
   text-align: center;
   overflow: hidden;
-  height: 150px;
   position: relative;
-  transition: 0.4s all ease-in;
 }
-.overview-wrap .overview-text.active {
-  height: 360px;
+.overview-wrap .overviewText .active {
   transition: 0.4s all ease-in;
 }
 .overview-wrap .show-more {
