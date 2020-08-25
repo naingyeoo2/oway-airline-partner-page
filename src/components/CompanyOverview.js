@@ -12,7 +12,7 @@ class CompanyOverview extends Component {
     };
   }
   componentDidMount() {
-    let height = document.getElementById("overview-text-height").clientHeight;
+    let height = document.getElementById("overview-text-id").clientHeight;
     this.setState({ textHeight: height });
     if (height > 180) {
       this.setState({ textHeight: height, initialHeight: 180 });
@@ -21,13 +21,10 @@ class CompanyOverview extends Component {
     }
   }
   showMore() {
-    {
       this.state.isShowMore
         ? this.setState({ isShowMore: false })
         : this.setState({ isShowMore: true });
-    }
   }
-
   render() {
     const style = {
       showAllText: {
@@ -61,7 +58,7 @@ class CompanyOverview extends Component {
                   }
                 >
                   <div
-                    id="overview-text-height"
+                    id="overview-text-id"
                     dangerouslySetInnerHTML={{
                       __html:
                         this.props.overview && this.props.overview.description,
@@ -70,24 +67,22 @@ class CompanyOverview extends Component {
                 </div>
               </div>
               <div className="show-more" title="Company Overview">
-                <span onClick={() => this.showMore()}>
                   {this.state.isShowMore ? (
-                    <i>
+                    <span onClick={() => this.showMore()}>
                       <i className="arrow up"></i>Show Less
-                    </i>
+                    </span>
                   ) : (
-                    <i>
+                    <span onClick={() => this.showMore()}>
                       <i className="arrow down"></i>Show More
-                    </i>
+                    </span>
                   )}
-                </span>
               </div>
             </div>
           ) : (
             <div className="overview-text-wrap">
               <div className="overviewText" style={style.showAllText}>
                 <div
-                  id="overview-text-height"
+                  id="overview-text-id"
                   dangerouslySetInnerHTML={{
                     __html:
                       this.props.overview && this.props.overview.description,

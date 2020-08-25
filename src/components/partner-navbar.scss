@@ -1,38 +1,60 @@
 .reactcomp-anchor-nav {
   display: block;
 }
-.nav-bar-box {
-  height: 85px;
+.reactcomp-anchor-nav .nav-bar-box {
+  height: 45px;
 }
-.nav-bar-wrapper {
+.reactcomp-anchor-nav .nav-bar-wrapper {
   margin-bottom: 20px;
+  transition: all 0.5s ease-in;
 }
-nav {
+.reactcomp-anchor-nav nav {
   display: block;
 }
-.nav-bar-wrapper .nav-bar-list {
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-list {
   max-width: 1170px;
-  background-color: #fff;
   margin: 0 auto;
   display: -webkit-flex;
   display: flex;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid #00000029;
+  border-bottom: 2px solid #00000029;
 }
-ul li {
+.reactcomp-anchor-nav ul li {
   list-style: none;
   display: list-item;
   text-align: -webkit-match-parent;
 }
-.nav-bar-wrapper .nav-bar-li {
+.reactcomp-anchor-nav .nav-bar-li a span{
+  padding: 10px 40px;
+}
+.reactcomp-anchor-nav .nav-bar-li.actived a span{
+  background-color: #0a56bb;
+  color: white;
+  border-radius: 40px;
+  padding: 10px 40px;
+}
+.reactcomp-anchor-nav ul li:hover a span{
+  // background-color: #0a56bb;
+  color: #0a56bb;
+  border-radius: 40px;
+  padding: 10px 40px;
+}
+.reactcomp-anchor-nav ul li a {
+  color: rgba(0, 0, 0, 0.65);
+}
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li {
   -webkit-flex: 1;
   flex: 1 1;
   position: relative;
   background: #fff;
 }
-.nav-bar-wrapper .nav-bar-li .nav-bar-href {
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .actived li a {
+  border-bottom: 2px solid #287dfa;
+  color: #0a56bb;
+}
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-href {
   display: block;
   padding: 24px 0 22px;
   text-decoration: none;
@@ -43,10 +65,9 @@ ul li {
   outline: none;
   background: #fff;
 }
-.nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper {
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper {
   padding: 0 12px;
   box-sizing: border-box;
-  border-right: 1px solid #dadfe6;
   height: 100%;
   display: -webkit-flex;
   display: flex;
@@ -55,6 +76,30 @@ ul li {
   -webkit-align-items: center;
   align-items: center;
 }
-.nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
+.nav-bar-wrapper .nav-bar-li.actived li a {
+  background: #0a56bb;
+  color: white;
+  border-radius: 40px;
+}
+.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
   text-decoration: none;
+}
+.reactcomp-anchor-nav .nav-fixed {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(69, 88, 115, 0.12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+}
+.reactcomp-anchor-nav .nav-fixed .nav-bar-list {
+  max-width: 1170px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.reactcomp-anchor-nav .nav-fixed .nav-bar-wrapper {
+  margin-bottom: 20px;
 }

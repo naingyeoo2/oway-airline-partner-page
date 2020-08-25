@@ -26,13 +26,15 @@
 .overview-wrap .show-more span {
   cursor: pointer;
   background: #ffffff;
-  padding: 7px 28px;
+  padding: 7px 0;
   z-index: 1;
   text-transform: capitalize;
   color: #0a56bb;
   border-radius: 50px;
   box-shadow: 0px 2px 8px 0px #0000002e;
   border: 2px solid;
+  display: inline-block;
+  width: 140px;
 }
 .overview-wrap .show-more span:hover {
   background: #f7f7f7;
@@ -48,15 +50,16 @@
   font-size: 17px;
   font-weight: bold;
   vertical-align: center;
-  margin-right: 10px;
 }
 .overview-wrap .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   margin-bottom: 0;
+  margin-right: 15px;
 }
 .overview-wrap .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-bottom: 3px;
+  margin-right: 10px;
 }

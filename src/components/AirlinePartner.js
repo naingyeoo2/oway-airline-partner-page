@@ -21,11 +21,15 @@ import PartnerNavBar from "./PartnerNavBar";
 class AirlinePartner extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      scrolled: false,
+      isOverview: false
+    };
   }
 
   componentDidMount() {
     const path = this.props.match.params.partnerSlug;
+    window.addEventListener('scroll',this.handleScroll);
 
     this.setState({ isLoading: true });
     const filteredArray = partners.filter((partner) => partner.keyword === path);
@@ -33,6 +37,19 @@ class AirlinePartner extends Component {
     setTimeout(() => {
       this.setState({ isLoading: false });
     }, 1000);
+  }
+  handleScroll=()=> {
+    const offset = window.scrollY;
+    if(offset >327){
+      this.setState({
+        scrolled: true,
+        isOverview: true
+      })
+    }else{
+      this.setState({
+        scrolled: false
+      })
+    }
   }
   render() {
     return (
@@ -45,7 +62,7 @@ class AirlinePartner extends Component {
         ) : (
           <div>
             <PartnerCard name={this.state.name} image={this.state.img_url} />
-            <PartnerNavBar />
+            <PartnerNavBar scrolled={this.state.scrolled} isOverview={this.state.isOverview} />
             <CompanyOverview overview={this.state.overview} />
             <FAQ faq={this.state.faq} />
             <Promotion promotion={this.state.promotion} />
