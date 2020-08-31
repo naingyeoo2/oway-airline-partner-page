@@ -47,7 +47,8 @@ class AirlinePartner extends Component {
       })
     }else{
       this.setState({
-        scrolled: false
+        scrolled: false,
+        isOverview: false
       })
     }
   }
