@@ -7,6 +7,9 @@ import { airlines } from "../constants/constants";
 import PopularAirlineCard from "./PopularAirlineCard";
 
 class PopularAirlines extends Component {
+  componentDidMount(){
+    
+  }
   render() {
     return (
       <div className="popular-airline">

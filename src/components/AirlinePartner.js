@@ -40,7 +40,7 @@ class AirlinePartner extends Component {
   }
   handleScroll=()=> {
     const offset = window.scrollY;
-    if(offset >327){
+    if(offset >360){
       this.setState({
         scrolled: true,
         isOverview: true
