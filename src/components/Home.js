@@ -7,9 +7,16 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import Cover from "./Cover";
 import Footer from "./Footer";
+import { connect } from "react-redux";
+import { loadAirlines } from "../actions";
+// import { airlines } from "../constants/constants";s
 
 class Home extends Component {
+  componentDidMount() {
+    // this.props.loadAirlines();
+  }
   render() {
+    console.log(this.props.initialState && this.props.initialState.partner);
     return (
       <div>
         <Header />
@@ -21,4 +28,15 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+
+const mapStateToProps = (state) => {
+  return {
+    initialState: state.initialState,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    loadAirlines: () => dispatch(loadAirlines()),
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

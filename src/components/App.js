@@ -5,15 +5,10 @@ import "./app.scss";
 
 import AirlinePartner from "./AirlinePartner";
 import Home from "./Home";
-import { Provider } from "react-redux";
-import configureStore from "../stores";
-
-const store = configureStore();
 
 function App() {
   return (
-    <Provider store={store}>
-      <Router>
+    <Router>
       <Switch>
         <Route exact path="/partner/:partnerSlug">
           <AirlinePartner />
@@ -26,7 +21,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-    </Provider>
   );
 }
 export default App;

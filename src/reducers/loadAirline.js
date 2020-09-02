@@ -5,19 +5,33 @@ import {
 } from "../constants/actionTypes";
 
 const initialState = {
-    isLoading: false,
-    partner: [],
-    error: null
-}
+  isLoading: false,
+  partner: [],
+  error: null,
+};
 
 export const loadAirlinesReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_AIRLINES:
-      return state;
+      return {
+        initialState: {
+          isLoading: true,
+        },
+      };
     case LOAD_AIRLINES_SUCCESS:
-      return state + action.payload;
+      return {
+        initialState: {
+          partner: action.payload,
+          isLoading: false,
+        },
+      };
     case LOAD_AIRLINES_FAIL:
-      return state + action.payload;
+      return {
+        initialState: {
+          isLoading: false,
+          error: action.payload,
+        },
+      };
     default:
       return state;
   }
