@@ -4,24 +4,22 @@ import {
   LOAD_AIRLINES_FAIL
 } from "../constants/actionTypes";
 
-export function loadAirlines(airlines) {
-  console.info('action')
+export function loadAirlines() {
   return {
-    type: LOAD_AIRLINES,
-    airlines
+    type: LOAD_AIRLINES
   };
 }
 
 export function loadAirlilnesSuccess(payload) {
   return {
     type: LOAD_AIRLINES_SUCCESS,
-    payload,
+    payload
   };
 }
 
 export function loadAirlinesFail(error) {
   return {
     type: LOAD_AIRLINES_FAIL,
-    error,
+    error
   };
 }

@@ -1,11 +1,14 @@
 .promotion-card{
-    flex: 0 23%;
+    flex: 0 24%;
     box-shadow: 0 0 6px #00000029;
     border-radius: 5px;
     cursor: pointer;
-    padding: 5px;
+    padding: 0;
     background-color: #fff;
     transition: 0.3s all ease-in;
+}
+.promotion-card .ant-card-body {
+    padding: 10px;
 }
 .promotion-card:hover{
     box-shadow: 4px 6px 7px rgb(192,192,192);

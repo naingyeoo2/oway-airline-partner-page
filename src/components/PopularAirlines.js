@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import "./popular-airlines.scss";
 
-import { airlines } from "../constants/constants";
+// import { airlines } from "../constants/constants";
 
 import PopularAirlineCard from "./PopularAirlineCard";
 import { loadAirlines } from "../actions";
@@ -30,10 +30,10 @@ class PopularAirlines extends Component {
                 </div>
                 <div className="col-image">
                   <h3>
-                    <span>{airlines[0].international.title}</span>
+                    <span>{this.props.initialState && this.props.initialState.partner[0].international.title}</span>
                   </h3>
                   <div className="popualr-airline-block">
-                    {airlines[0].international.airline_partner.map(
+                    {this.props.initialState && this.props.initialState.partner[0].international.airline_partner.map(
                       (airline) => (
                         <PopularAirlineCard
                           airline={airline}
@@ -45,10 +45,10 @@ class PopularAirlines extends Component {
                 </div>
                 <div className="col-image">
                   <h3>
-                    <span>{airlines[0].domestic.title}</span>
+                    <span>{this.props.initialState && this.props.initialState.partner[0].domestic.title}</span>
                   </h3>
                   <div className="popualr-airline-block">
-                    {airlines[0].domestic.airline_partner.map((airline) => (
+                    {this.props.initialState && this.props.initialState.partner[0].domestic.airline_partner.map((airline) => (
                       <PopularAirlineCard airline={airline} key={airline.id} />
                     ))}
                   </div>

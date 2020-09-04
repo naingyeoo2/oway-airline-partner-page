@@ -28,7 +28,7 @@ class Home extends Component {
     );
   }
 }
-
+  
 const mapStateToProps = (state) => {
   return {
     initialState: state.initialState,

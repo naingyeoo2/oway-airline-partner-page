@@ -6,3 +6,22 @@
 .faq-wrap ul {
   list-style: none;
 }
+.site-collapse-custom-collapse .site-collapse-custom-panel {
+  background: #fff;
+  box-shadow: 0 0 6px #00000029;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  border-bottom: 0;
+  overflow: hidden;
+}
+.ant-collapse-icon-position-right
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-arrow {
+  color: #0a56bb;
+  font-weight: bold;
+}
+.site-collapse-custom-collapse .ant-collapse-header {
+  color: #242a3a;
+  font-weight: 600;
+}
