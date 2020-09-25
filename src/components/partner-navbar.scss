@@ -140,3 +140,13 @@
     padding: 0;
   }
 }
+@media only screen and (max-width: 992px) { 
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list{
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+    padding: 10px 5px;
+    transition: none;
+  }
+}
