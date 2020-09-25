@@ -19,38 +19,21 @@ import TPBGroup from "./TPBGroup";
 import PartnerNavBar from "./PartnerNavBar";
 
 class AirlinePartner extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      scrolled: false,
-      isOverview: false
+      isLoading: false
     };
   }
 
   componentDidMount() {
     const path = this.props.match.params.partnerSlug;
-    window.addEventListener('scroll',this.handleScroll);
-
     this.setState({ isLoading: true });
     const filteredArray = partners.filter((partner) => partner.keyword === path);
     this.setState(filteredArray[0]);
     setTimeout(() => {
       this.setState({ isLoading: false });
     }, 1000);
-  }
-  handleScroll=()=> {
-    const offset = window.scrollY;
-    if(offset >360){
-      this.setState({
-        scrolled: true,
-        isOverview: true
-      })
-    }else{
-      this.setState({
-        scrolled: false,
-        isOverview: false
-      })
-    }
   }
   render() {
     return (
@@ -63,7 +46,7 @@ class AirlinePartner extends Component {
         ) : (
           <div>
             <PartnerCard name={this.state.name} image={this.state.img_url} />
-            <PartnerNavBar scrolled={this.state.scrolled} isOverview={this.state.isOverview} />
+            <PartnerNavBar />
             <CompanyOverview overview={this.state.overview} />
             <FAQ faq={this.state.faq} />
             <Promotion promotion={this.state.promotion} />

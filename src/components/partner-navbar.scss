@@ -1,90 +1,17 @@
 .reactcomp-anchor-nav {
   display: block;
+  // background-color: red;
 }
-.reactcomp-anchor-nav .nav-bar-box {
-  height: 45px;
+.reactcomp-anchor-nav .app-container .nav-bar-box {
+  height: 60px;
+  // background-color: gray;
 }
-.reactcomp-anchor-nav .nav-bar-wrapper {
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper {
   margin-bottom: 20px;
   transition: all 0.5s ease-in;
+  // background-color: green;
 }
-.reactcomp-anchor-nav nav {
-  display: block;
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-list {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
-  text-align: center;
-  font-size: 14px;
-  line-height: 18px;
-  border-bottom: 2px solid #00000029;
-}
-.reactcomp-anchor-nav ul li {
-  list-style: none;
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-.reactcomp-anchor-nav .nav-bar-li a span{
-  padding: 10px 40px;
-}
-.reactcomp-anchor-nav .nav-bar-li.actived a span{
-  background-color: #0a56bb;
-  color: white;
-  border-radius: 40px;
-  padding: 10px 40px;
-}
-.reactcomp-anchor-nav ul li:hover a span{
-  // background-color: #0a56bb;
-  color: #0a56bb;
-  border-radius: 40px;
-  padding: 10px 40px;
-}
-.reactcomp-anchor-nav ul li a {
-  color: rgba(0, 0, 0, 0.65);
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li {
-  -webkit-flex: 1;
-  flex: 1 1;
-  position: relative;
-  background: #fff;
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .actived li a {
-  border-bottom: 2px solid #287dfa;
-  color: #0a56bb;
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-href {
-  display: block;
-  padding: 24px 0 22px;
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  border: 0;
-  outline: none;
-  background: #fff;
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper {
-  padding: 0 12px;
-  box-sizing: border-box;
-  height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-.nav-bar-wrapper .nav-bar-li.actived li a {
-  background: #0a56bb;
-  color: white;
-  border-radius: 40px;
-}
-.reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
-  text-decoration: none;
-}
-.reactcomp-anchor-nav .nav-fixed {
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(69, 88, 115, 0.12);
@@ -93,13 +20,123 @@
   left: 0;
   z-index: 100;
   transition: all 0.5s ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.reactcomp-anchor-nav .nav-fixed .nav-bar-list {
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list {
   max-width: 1170px;
-  border: none;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 2px solid #00000029;
   padding-left: 15px;
   padding-right: 15px;
+  // justify-content: space-between;
 }
-.reactcomp-anchor-nav .nav-fixed .nav-bar-wrapper {
-  margin-bottom: 20px;
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed .nav-bar-list{
+  border-bottom: none;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box nav{
+  display: block;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li {
+  list-style: none;
+  display: list-item;
+  // text-align: -webkit-match-parent;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+  background-color: #fff;
+  color: #0a56bb;
+  border-radius: 40px;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li:hover a span{
+  background-color: #0a56bb;
+  color: #fff;
+  border-radius: 40px;
+  padding: 10px 30px;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li {
+  -webkit-flex: 1;
+  flex: 1 1;
+  position: relative;
+  background: #fff;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li.actived span{
+  background-color: #0a56bb;
+  color: #fff;
+  padding: 10px 30px;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href {
+  display: block;
+  padding: 20px 0 20px;
+  text-decoration: none;
+  // width: 100%;
+  // height: 100%;
+  border: 0;
+  // outline: none;
+  background: #fff;
+}
+.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href .nav-bar-gap-wrapper {
+  padding: 0 12px;
+  // display: -webkit-flex;
+  // display: flex;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  // -webkit-align-items: center;
+  // align-items: center;
+}
+// .nav-bar-wrapper .nav-bar-li.actived li a {
+//   background: #0a56bb;
+//   color: white;
+//   border-radius: 40px;
+// }
+// .reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
+//   text-decoration: none;
+// }
+// .reactcomp-anchor-nav .nav-fixed {
+//   width: 100%;
+//   background-color: #fff;
+//   box-shadow: 0 4px 8px 0 rgba(69, 88, 115, 0.12);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+//   transition: all 0.5s ease-in-out;
+//   border-bottom-left-radius: 10px;
+//   border-bottom-right-radius: 10px;
+// }
+// .reactcomp-anchor-nav .nav-fixed .nav-bar-list {
+//   max-width: 1170px;
+//   border-bottom: none;
+//   padding-left: 15px;
+//   padding-right: 15px;
+  
+// }
+// .reactcomp-anchor-nav .nav-fixed .nav-bar-wrapper {
+//   margin-bottom: 20px;
+  
+// }
+@media only screen and (max-width: 768px) { 
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list{
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+    padding: 10px 5px;
+    transition: none;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li span{
+    padding: 10px 20px;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li.actived span{
+    padding: 10px 20px;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href .nav-bar-gap-wrapper {
+    padding: 0;
+  }
 }

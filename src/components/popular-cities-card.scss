@@ -34,3 +34,15 @@
   border-left: 2px solid #faa534;
   padding-left: 10px;
 }
+@media only screen and (max-width: 768px) { 
+  .city {
+    width: 90%;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 992px) { 
+  .city {
+    width: 92%;
+    height: 360px;
+  }
+}

@@ -55,7 +55,9 @@ class PopularCities extends Component {
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{
-                0: { items: 3 },
+                0: { items: 2 },
+                769: { items : 5 },
+                993: { items: 6 },
                 1024: { items: 6 },
               }}
               autoPlay={false}
@@ -72,7 +74,9 @@ class PopularCities extends Component {
               buttonsDisabled={false}
               dotsDisabled={true}
               responsive={{
-                0: { items: 3 },
+                0: { items: 2 },
+                769: { items : 5 },
+                993: { items: 6 },
                 1024: { items: 6 },
               }}
               autoPlay={false}

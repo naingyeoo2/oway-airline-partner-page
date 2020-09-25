@@ -20,14 +20,14 @@ class PromotionCard extends Component {
             </div>
             <div className="promo-date">
               <span>
-                Date :
-                {this.props.route.date_from}-
+                Date : &nbsp;
+                {this.props.route.date_from}&nbsp; - &nbsp;
                 {this.props.route.date_to}
               </span>
             </div>
           </div>
           <div className="card-discount">
-            Discount :
+            Discount : &nbsp;
             <span>{this.props.route && this.props.route.title}</span>
           </div>
         </div>
