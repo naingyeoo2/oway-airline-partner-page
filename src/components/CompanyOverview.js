@@ -50,7 +50,7 @@ class CompanyOverview extends Component {
             <div>
               <div className="overview-text-wrap">
                 <div
-                  className="overviewText"
+                  className="overview-text"
                   style={
                     this.state.isShowMore
                       ? style.showMoreText
@@ -80,7 +80,7 @@ class CompanyOverview extends Component {
             </div>
           ) : (
             <div className="overview-text-wrap">
-              <div className="overviewText" style={style.showAllText}>
+              <div className="overview-text" style={style.showAllText}>
                 <div
                   id="overview-text-id"
                   dangerouslySetInnerHTML={{

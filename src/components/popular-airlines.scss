@@ -5,7 +5,13 @@
 }
 .popular-airline .airline-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+}
+.block-for-col-image{
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between; 
 }
 .popular-airline .airline-block .col-title {
   flex: 1;
@@ -34,4 +40,32 @@
 .popular-airline .airline-block .col-image:last-child {
   margin-right: 0;
   border-right: none;
+}
+@media only screen and (max-width: 768px) {
+  .popular-airline .airline-block {
+    display: flex;
+    flex-direction: column;  
+  }
+  .popular-airline .airline-block .col-title {
+    flex: 1;
+    padding: 20px 0 0 0;
+  }
+  .block-for-col-image{
+    display: flex;
+    flex-direction: row;
+  }
+  .popular-airline .airline-block .col-image {
+    margin-right: 50px;
+  }
+  .popular-airline .airline-block .col-title .header-title {
+    text-align: center;
+  }
+  .popular-airline .airline-block .col-title .header-title small {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .popular-airline .airline-block .col-image {
+    margin-right: 30px;
+  }
 }

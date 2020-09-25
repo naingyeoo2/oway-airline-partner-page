@@ -28,29 +28,45 @@ class PopularAirlines extends Component {
                     <small>for your best travel experience</small>
                   </h2>
                 </div>
-                <div className="col-image">
-                  <h3>
-                    <span>{this.props.initialState && this.props.initialState.partner[0].international.title}</span>
-                  </h3>
-                  <div className="popualr-airline-block">
-                    {this.props.initialState && this.props.initialState.partner[0].international.airline_partner.map(
-                      (airline) => (
-                        <PopularAirlineCard
-                          airline={airline}
-                          key={airline.id}
-                        />
-                      )
-                    )}
+                <div className="block-for-col-image">
+                  <div className="col-image">
+                    <h3>
+                      <span>
+                        {this.props.initialState &&
+                          this.props.initialState.partner[0].international
+                            .title}
+                      </span>
+                    </h3>
+                    <div className="popualr-airline-block">
+                      {this.props.initialState &&
+                        this.props.initialState.partner[0].international.airline_partner.map(
+                          (airline) => (
+                            <PopularAirlineCard
+                              airline={airline}
+                              key={airline.id}
+                            />
+                          )
+                        )}
+                    </div>
                   </div>
-                </div>
-                <div className="col-image">
-                  <h3>
-                    <span>{this.props.initialState && this.props.initialState.partner[0].domestic.title}</span>
-                  </h3>
-                  <div className="popualr-airline-block">
-                    {this.props.initialState && this.props.initialState.partner[0].domestic.airline_partner.map((airline) => (
-                      <PopularAirlineCard airline={airline} key={airline.id} />
-                    ))}
+                  <div className="col-image">
+                    <h3>
+                      <span>
+                        {this.props.initialState &&
+                          this.props.initialState.partner[0].domestic.title}
+                      </span>
+                    </h3>
+                    <div className="popualr-airline-block">
+                      {this.props.initialState &&
+                        this.props.initialState.partner[0].domestic.airline_partner.map(
+                          (airline) => (
+                            <PopularAirlineCard
+                              airline={airline}
+                              key={airline.id}
+                            />
+                          )
+                        )}
+                    </div>
                   </div>
                 </div>
               </div>

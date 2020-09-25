@@ -7,7 +7,10 @@
   margin-bottom: 20px;
   overflow: hidden;
 }
-.overview-wrap .overviewText {
+// .overview-wrap .overview-text-wrap.no-margin-bottom {
+//   margin-bottom: none;
+// }
+.overview-wrap .overview-text {
   line-height: 30px;
   max-width: 50%;
   margin: 0 auto;
@@ -15,7 +18,7 @@
   overflow: hidden;
   position: relative;
 }
-.overview-wrap .overviewText .active {
+.overview-wrap .overview-text .active {
   transition: 0.4s all ease-in;
 }
 .overview-wrap .show-more {
@@ -64,7 +67,12 @@
   margin-right: 10px;
 }
 @media only screen and (max-width: 768px) {
-  .overview-wrap .overviewText {
+  .overview-wrap .overview-text {
     max-width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .overview-wrap .overview-text {
+    max-width: 80%;
   }
 }

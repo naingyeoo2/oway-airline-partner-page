@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   transition: all 0.5s ease-in;
   // background-color: green;
+  // border: 2px solid;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed {
   width: 100%;
@@ -32,12 +33,15 @@
   font-size: 14px;
   line-height: 18px;
   border-bottom: 2px solid #00000029;
-  padding-left: 15px;
-  padding-right: 15px;
+  // border-top: 2px solid #00000029;
+  // padding-left: 15px;
+  // padding-right: 15px;
   // justify-content: space-between;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed .nav-bar-list{
   border-bottom: none;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box nav{
   display: block;
@@ -67,8 +71,8 @@
   background: #fff;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li.actived span{
-  background-color: #0a56bb;
-  color: #fff;
+  // background-color: #0a56bb;
+  // color: #fff;
   padding: 10px 30px;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href {
@@ -138,6 +142,28 @@
   }
   .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href .nav-bar-gap-wrapper {
     padding: 0;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list::after{
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.15) 100%);
+    content: " ";
+    position: absolute;
+    right: 0;
+    // top: 76px;
+    height: 60px;
+    border-radius: 0 0 10px 0;
+    width: 20px;
+    z-index: 11;
+  }
+  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed .nav-bar-list::after{
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.15) 100%);
+    content: " ";
+    position: absolute;
+    right: 0;
+    // top: 76px;
+    height: 60px;
+    border-radius: 0 0 10px 0;
+    width: 20px;
+    z-index: 11;
   }
 }
 @media only screen and (max-width: 992px) { 
