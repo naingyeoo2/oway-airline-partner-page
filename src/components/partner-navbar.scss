@@ -1,16 +1,12 @@
 .reactcomp-anchor-nav {
   display: block;
-  // background-color: red;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box {
   height: 60px;
-  // background-color: gray;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper {
   margin-bottom: 20px;
-  transition: all 0.5s ease-in;
-  // background-color: green;
-  // border: 2px solid;
+  transition: all 0.3s ease-in;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed {
   width: 100%;
@@ -24,7 +20,11 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list {
+.reactcomp-anchor-nav
+  .app-container
+  .nav-bar-box
+  .nav-bar-wrapper
+  .nav-bar-list {
   max-width: 1170px;
   margin: 0 auto;
   display: -webkit-flex;
@@ -32,33 +32,38 @@
   text-align: center;
   font-size: 14px;
   line-height: 18px;
-  border-bottom: 2px solid #00000029;
-  // border-top: 2px solid #00000029;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // justify-content: space-between;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.1);
+  border-top: 0.2px solid rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  white-space: nowrap;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed .nav-bar-list{
+.reactcomp-anchor-nav
+  .app-container
+  .nav-bar-box
+  .nav-bar-wrapper.nav-fixed
+  .nav-bar-list {
   border-bottom: none;
+  border-top: none;
   padding-left: 15px;
   padding-right: 15px;
+  overflow: auto;
+  white-space: nowrap;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box nav{
+.reactcomp-anchor-nav .app-container .nav-bar-box nav {
   display: block;
 }
 .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li {
   list-style: none;
   display: list-item;
-  // text-align: -webkit-match-parent;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span {
   background-color: #fff;
   color: #0a56bb;
   border-radius: 40px;
   padding: 10px 30px;
   transition: all 0.3s ease-in;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li:hover a span{
+.reactcomp-anchor-nav .app-container .nav-bar-box nav ul li:hover a span {
   background-color: #0a56bb;
   color: #fff;
   border-radius: 40px;
@@ -70,108 +75,158 @@
   position: relative;
   background: #fff;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li.actived span{
-  // background-color: #0a56bb;
-  // color: #fff;
+.reactcomp-anchor-nav
+  .app-container
+  .nav-bar-box
+  .nav-bar-wrapper
+  .nav-bar-li.actived
+  span {
+  background-color: #0a56bb;
+  color: #fff;
   padding: 10px 30px;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href {
+.reactcomp-anchor-nav
+  .app-container
+  .nav-bar-box
+  .nav-bar-wrapper
+  .nav-bar-li
+  .nav-bar-href {
   display: block;
   padding: 20px 0 20px;
   text-decoration: none;
-  // width: 100%;
-  // height: 100%;
   border: 0;
-  // outline: none;
   background: #fff;
 }
-.reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href .nav-bar-gap-wrapper {
+.reactcomp-anchor-nav
+  .app-container
+  .nav-bar-box
+  .nav-bar-wrapper
+  .nav-bar-li
+  .nav-bar-href
+  .nav-bar-gap-wrapper {
   padding: 0 12px;
-  // display: -webkit-flex;
-  // display: flex;
-  // -webkit-justify-content: center;
-  // justify-content: center;
-  // -webkit-align-items: center;
-  // align-items: center;
 }
-// .nav-bar-wrapper .nav-bar-li.actived li a {
-//   background: #0a56bb;
-//   color: white;
-//   border-radius: 40px;
-// }
-// .reactcomp-anchor-nav .nav-bar-wrapper .nav-bar-li .nav-bar-gap-wrapper span {
-//   text-decoration: none;
-// }
-// .reactcomp-anchor-nav .nav-fixed {
-//   width: 100%;
-//   background-color: #fff;
-//   box-shadow: 0 4px 8px 0 rgba(69, 88, 115, 0.12);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   z-index: 100;
-//   transition: all 0.5s ease-in-out;
-//   border-bottom-left-radius: 10px;
-//   border-bottom-right-radius: 10px;
-// }
-// .reactcomp-anchor-nav .nav-fixed .nav-bar-list {
-//   max-width: 1170px;
-//   border-bottom: none;
-//   padding-left: 15px;
-//   padding-right: 15px;
-  
-// }
-// .reactcomp-anchor-nav .nav-fixed .nav-bar-wrapper {
-//   margin-bottom: 20px;
-  
-// }
-@media only screen and (max-width: 768px) { 
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list{
+@media only screen and (max-width: 768px) {
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-list {
     overflow: auto;
     white-space: nowrap;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span {
     padding: 10px 5px;
     transition: none;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li span{
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-li
+    span {
     padding: 10px 20px;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li.actived span{
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-li.actived
+    span {
     padding: 10px 20px;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-li .nav-bar-href .nav-bar-gap-wrapper {
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-li
+    .nav-bar-href
+    .nav-bar-gap-wrapper {
     padding: 0;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list::after{
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.15) 100%);
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-list::before {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
     content: " ";
     position: absolute;
-    right: 0;
-    // top: 76px;
-    height: 60px;
-    border-radius: 0 0 10px 0;
+    left: 0;
+    height: 59px;
+    border-radius: 10px 0 0 10px;
     width: 20px;
     z-index: 11;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper.nav-fixed .nav-bar-list::after{
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,0.15) 100%);
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-list::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
     content: " ";
     position: absolute;
     right: 0;
-    // top: 76px;
-    height: 60px;
+    height: 59px;
+    border-radius: 0 10px 10px 0;
+    width: 20px;
+    z-index: 11;
+  }
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper.nav-fixed
+    .nav-bar-list::before {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+    content: " ";
+    position: absolute;
+    left: 0;
+    height: 59px;
+    border-radius: 0 0 0 10px;
+    width: 20px;
+    z-index: 11;
+  }
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper.nav-fixed
+    .nav-bar-list::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+    content: " ";
+    position: absolute;
+    right: 0;
+    height: 59px;
     border-radius: 0 0 10px 0;
     width: 20px;
     z-index: 11;
   }
 }
-@media only screen and (max-width: 992px) { 
-  .reactcomp-anchor-nav .app-container .nav-bar-box .nav-bar-wrapper .nav-bar-list{
+@media only screen and (max-width: 992px) {
+  .reactcomp-anchor-nav
+    .app-container
+    .nav-bar-box
+    .nav-bar-wrapper
+    .nav-bar-list {
     overflow: auto;
     white-space: nowrap;
   }
-  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span{
+  .reactcomp-anchor-nav .app-container .nav-bar-box nav ul li a span {
     padding: 10px 5px;
     transition: none;
   }

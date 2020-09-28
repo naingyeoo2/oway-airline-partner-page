@@ -30,15 +30,6 @@ class FAQ extends Component {
               bordered={false}
               className="site-collapse-custom-collapse"
             >
-              {/* <Panel header="This is panel header 0" key="0">
-                <p>asdfsffs</p>
-              </Panel>
-              <Panel header="This is panel header 1" key="1">
-                <p>asdfsffs</p>
-              </Panel>
-              <Panel header="This is panel header 2" key="2">
-                <p>asdfsffs</p>
-              </Panel> */}
               {this.props.faq &&
                 this.props.faq.questions.map((question, index) => (
                   <Panel
@@ -50,20 +41,6 @@ class FAQ extends Component {
                   </Panel>
                 ))}
             </Collapse>
-            {/* <ul>
-              {this.props.faq &&
-                this.props.faq.questions.map((question, index) => (
-                  <FaqCard
-                    question={question}
-                    key={index}
-                    current={index}
-                    showItem={this.state.showItem}
-                    callbackParent={(currentItem) =>
-                      this.setState({ showItem: currentItem })
-                    }
-                  />
-                ))}
-            </ul> */}
           </div>
         </div>
       </div>

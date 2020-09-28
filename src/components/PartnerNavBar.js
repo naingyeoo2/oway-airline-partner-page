@@ -6,12 +6,17 @@ class PartnerNavBar extends Component {
   constructor() {
     super();
     this.state = {
-      scrolled: false,
+      isScrolled: false,
       isOverview: false,
       isFaq: false,
       isPromotion: false,
       isPopularDestination: false,
       isPopularRoute: false,
+      overviewHeight: 0,
+      faqHeight : 0,
+      promotionHeight : 0,
+      popularDestinationHeight : 0,
+      popularRouteHeight : 0,
     };
   }
   overviewCheck() {
@@ -63,126 +68,112 @@ class PartnerNavBar extends Component {
   //   const offset = window.scrollY;
   //   if(offset >150){
   //     this.setState({
-  //       scrolled: true
+  //       isScrolled: true
   //     })
   //   }else{
   //     this.setState({
-  //       scrolled: false
+  //       isScrolled: false
   //     })
   //   }
   // }
-  componentDidMount(){
-    window.addEventListener('scroll',this.handleScroll);
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    let overviewHeight = document.getElementById("overview").clientHeight;
+    this.setState({ overviewHeight: overviewHeight });
+    let faqHeight = document.getElementById("faqs").clientHeight;
+    this.setState({ faqHeight: faqHeight });
   }
-  componentWillUnmount(){
-    window.removeEventListener('scroll',this.handleScroll);
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
   // useEffect(() => {
   //   window.addEventListener('scroll',this.handleScroll)
   // })
-  handleScroll=()=>{
+  handleScroll = () => {
     const offset = window.scrollY;
-    if(offset >390 && offset < 1000){
+
+    if (offset > 225) {
       this.setState({
-        scrolled: true,
-        isOverview: true
-      })
-    }else if(offset >1000){
+        isScrolled: true,
+      });
+    } else if (offset < 225) {
       this.setState({
-        scrolled: true,
-        isOverview: false
-      })
-    }
-    else{
-      this.setState({
-        scrolled: false,
-        isOverview: false
-      })
+        isScrolled: false,
+      });
     }
 
-  //   if(offset >1000 && offset < 1520){
-  //     this.setState({
-  //       scrolled: true,
-  //       isFaq: true
-  //     })
-  //   }else if(offset >1520){
-  //     this.setState({
-  //       scrolled: true,
-  //       isFaq: false
-  //     })
-  //   }else{
-  //     this.setState({
-  //       scrolled: false,
-  //       isFaq: false
-  //     })
-  //   }
-    
-  //   if(offset >1520 && offset < 1950){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPromotion: true
-  //     })
-  //   }else if(offset >1950){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPromotion: false
-  //     })
-  //   }else{
-  //     this.setState({
-  //       scrolled: false,
-  //       isPromotion: false
-  //     })
-  //   }
-    
-  //   if(offset >1950 && offset < 2560){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPopularDestination: true
-  //     })
-  //   }else if(offset >2560){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPopularDestination: false
-  //     })
-  //   }else{
-  //     this.setState({
-  //       scrolled: false,
-  //       isPopularDestination: false
-  //     })
-  //   }
-    
-  //   if(offset >2560 && offset < 3150){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPopularRoute: true
-  //     })
-  //   }else if(offset >3150){
-  //     this.setState({
-  //       scrolled: true,
-  //       isPopularRoute: false
-  //     })
-  //   }else{
-  //     this.setState({
-  //       scrolled: false,
-  //       isPopularRoute: false
-  //     })
-  //   }
+    if (offset > 225 && offset < 700) {
+      this.setState({
+        isOverview: true,
+        overviewHeight: this.state.overviewHeight+225,
+      });
+    } else {
+      this.setState({
+        isOverview: false
+      });
+    }
+
+    if (offset > 700 && offset < 1200) {
+      this.setState({
+        isFaq: true,
+      });
+    } else {
+      this.setState({
+        isFaq: false,
+      });
+    }
+
+    if (offset > 1200 && offset < 1650) {
+      this.setState({
+        isPromotion: true,
+      });
+    } else {
+      this.setState({
+        isPromotion: false,
+      });
+    }
+
+    if (offset > 1650 && offset < 2260) {
+      this.setState({
+        isPopularDestination: true,
+      });
+    } else {
+      this.setState({
+        isPopularDestination: false,
+      });
+    }
+
+    if (offset > 2260 && offset < 2700) {
+      this.setState({
+        isPopularRoute: true,
+      });
+    } else {
+      this.setState({
+        isPopularRoute: false,
+      });
+    }
   }
 
   render() {
+    // console.log(this.state.overviewHeight);
+    // console.log(this.state.faqHeight);
     return (
-      <div className="reactcomp-anchor-nav content-padding">
+      <div className="reactcomp-anchor-nav">
         <div className="app-container">
           <div className="nav-bar-box">
             <nav
               className={
-                this.state.scrolled
+                this.state.isScrolled
                   ? "nav-bar-wrapper nav-fixed"
                   : "nav-bar-wrapper"
               }
             >
               <ul className="nav-bar-list">
-                <li className={this.state.isOverview? 'nav-bar-li actived' : 'nav-bar-li'}>
+                <li
+                  className={
+                    this.state.isOverview ? "nav-bar-li actived" : "nav-bar-li"
+                  }
+                >
                   <a
                     className="nav-bar-href"
                     href="#overview"
@@ -193,7 +184,11 @@ class PartnerNavBar extends Component {
                     </div>
                   </a>
                 </li>
-                <li className={this.state.isFaq? 'nav-bar-li actived' : 'nav-bar-li'}>
+                <li
+                  className={
+                    this.state.isFaq ? "nav-bar-li actived" : "nav-bar-li"
+                  }
+                >
                   <a
                     className="nav-bar-href"
                     href="#faqs"
@@ -204,7 +199,11 @@ class PartnerNavBar extends Component {
                     </div>
                   </a>
                 </li>
-                <li className={this.state.isPromotion? 'nav-bar-li actived' : 'nav-bar-li'}>
+                <li
+                  className={
+                    this.state.isPromotion ? "nav-bar-li actived" : "nav-bar-li"
+                  }
+                >
                   <a
                     className="nav-bar-href"
                     href="#promotions"
@@ -215,18 +214,30 @@ class PartnerNavBar extends Component {
                     </div>
                   </a>
                 </li>
-                <li className={this.state.isPopularDestination? 'nav-bar-li actived' : 'nav-bar-li'}>
+                <li
+                  className={
+                    this.state.isPopularDestination
+                      ? "nav-bar-li actived"
+                      : "nav-bar-li"
+                  }
+                >
                   <a
                     className="nav-bar-href"
                     href="#popular-cities"
                     onClick={() => this.populalrDestinationCheck()}
                   >
                     <div className="nav-bar-gap-wrapper">
-                      <span>Popular Cities</span>
+                      <span>Popular Destinations</span>
                     </div>
                   </a>
                 </li>
-                <li className={this.state.isPopularRoute? 'nav-bar-li actived' : 'nav-bar-li'}>
+                <li
+                  className={
+                    this.state.isPopularRoute
+                      ? "nav-bar-li actived"
+                      : "nav-bar-li"
+                  }
+                >
                   <a
                     className="nav-bar-href"
                     href="#popular-routes"

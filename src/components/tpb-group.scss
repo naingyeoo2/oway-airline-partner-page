@@ -3,3 +3,8 @@
     border-radius: 10px;
     box-shadow: 1px 1px 6px #00000029;
 }
+@media only screen and (max-width: 768px){
+    .tpb-group-block{
+        padding: 20px;
+    }
+}

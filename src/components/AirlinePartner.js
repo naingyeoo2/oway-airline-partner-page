@@ -13,7 +13,7 @@ import Promotion from "./Promotion";
 import CompanyOverview from "./CompanyOverview";
 import PopularRoute from "./PopularRoute";
 import PopularCities from "./PopularCities";
-import PopularAirlines from "./PopularAirlines";
+// import PopularAirlines from "./PopularAirlines";
 import FAQ from "./FAQ";
 import TPBGroup from "./TPBGroup";
 import PartnerNavBar from "./PartnerNavBar";
@@ -51,7 +51,7 @@ class AirlinePartner extends Component {
             <FAQ faq={this.state.faq} />
             <Promotion promotion={this.state.promotion} />
             <PopularCities popularCities={this.state.popular_cities} />
-            <PopularAirlines path={this.props.match.params.partnerSlug} />
+            {/* <PopularAirlines path={this.props.match.params.partnerSlug} /> */}
             <PopularRoute popularRoute={this.state.popular_route} />
             <TPBGroup
               termAndCondition={this.state.term_and_condition}

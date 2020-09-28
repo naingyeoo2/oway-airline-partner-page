@@ -58,7 +58,7 @@ class PopularCities extends Component {
                 0: { items: 2 },
                 769: { items : 5 },
                 993: { items: 6 },
-                1024: { items: 6 },
+                768: { items: 6 },
               }}
               autoPlay={false}
               autoPlayInterval={3000}

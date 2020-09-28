@@ -16,7 +16,7 @@ class Home extends Component {
     // this.props.loadAirlines();
   }
   render() {
-    console.log(this.props.initialState && this.props.initialState.partner);
+    // console.log(this.props.initialState && this.props.initialState.partner);
     return (
       <div>
         <Header />

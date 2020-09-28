@@ -21,9 +21,9 @@ class CompanyOverview extends Component {
     }
   }
   showMore() {
-      this.state.isShowMore
-        ? this.setState({ isShowMore: false })
-        : this.setState({ isShowMore: true });
+    this.state.isShowMore
+      ? this.setState({ isShowMore: false })
+      : this.setState({ isShowMore: true });
   }
   render() {
     const style = {
@@ -40,33 +40,35 @@ class CompanyOverview extends Component {
       },
     };
     return (
-      <div className="overview-wrap content-padding" id="overview">
-        <div className="app-container">
-          <h2 className="header-title">
-            <span>{this.props.overview && this.props.overview.title}</span>
-            <small>this is company overview</small>
-          </h2>
-          {this.state.textHeight > 180 ? (
-            <div>
-              <div className="overview-text-wrap">
-                <div
-                  className="overview-text"
-                  style={
-                    this.state.isShowMore
-                      ? style.showMoreText
-                      : style.showLessText
-                  }
-                >
+      <div id="overview">
+        <div className="overview-wrap content-padding">
+          <div className="app-container">
+            <h2 className="header-title">
+              <span>{this.props.overview && this.props.overview.title}</span>
+              <small>this is company overview</small>
+            </h2>
+            {this.state.textHeight > 180 ? (
+              <div>
+                <div className="overview-text-wrap">
                   <div
-                    id="overview-text-id"
-                    dangerouslySetInnerHTML={{
-                      __html:
-                        this.props.overview && this.props.overview.description,
-                    }}
-                  ></div>
+                    className="overview-text"
+                    style={
+                      this.state.isShowMore
+                        ? style.showMoreText
+                        : style.showLessText
+                    }
+                  >
+                    <div
+                      id="overview-text-id"
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          this.props.overview &&
+                          this.props.overview.description,
+                      }}
+                    ></div>
+                  </div>
                 </div>
-              </div>
-              <div className="show-more" title="Company Overview">
+                <div className="show-more" title="Company Overview">
                   {this.state.isShowMore ? (
                     <span onClick={() => this.showMore()}>
                       <i className="arrow up"></i>Show Less
@@ -76,21 +78,22 @@ class CompanyOverview extends Component {
                       <i className="arrow down"></i>Show More
                     </span>
                   )}
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="overview-text-wrap">
-              <div className="overview-text" style={style.showAllText}>
-                <div
-                  id="overview-text-id"
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      this.props.overview && this.props.overview.description,
-                  }}
-                ></div>
+            ) : (
+              <div className="overview-text-wrap">
+                <div className="overview-text" style={style.showAllText}>
+                  <div
+                    id="overview-text-id"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        this.props.overview && this.props.overview.description,
+                    }}
+                  ></div>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     );

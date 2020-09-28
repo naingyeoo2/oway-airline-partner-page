@@ -1,7 +1,9 @@
 .partner-card{
     max-width: 100%;
-    padding: 100px;
+    padding: 30px;
 }
-.airline-name{
-    width: 100%;
-}
+@media only screen and (max-width: 769px) {
+    .partner-card{
+        padding: 0;
+    }
+  }
