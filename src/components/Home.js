@@ -4,23 +4,19 @@ import "./home.scss";
 
 import PopularAirlines from "./PopularAirlines";
 import Header from "./Header";
-import NavBar from "./NavBar";
 import Cover from "./Cover";
 import Footer from "./Footer";
 import { connect } from "react-redux";
 import { loadAirlines } from "../actions";
-// import { airlines } from "../constants/constants";s
 
 class Home extends Component {
   componentDidMount() {
     // this.props.loadAirlines();
   }
   render() {
-    // console.log(this.props.initialState && this.props.initialState.partner);
     return (
       <div>
         <Header />
-        <NavBar />
         <Cover />
         <PopularAirlines />
         <Footer />

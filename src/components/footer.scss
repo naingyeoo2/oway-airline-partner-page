@@ -1,6 +1,41 @@
 .footer{
-    width: 100%;
-    height:  300px;
-    background-color: #041D3D;
-    margin-top: 50px;
+    max-width: 100%;
+    // background-color: #041D3D;
+    background-color: #0A56BB;
+    .footer-icon{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 25px;
+        color: #041D3D;
+        padding-bottom: 5px;
+        
+        .facebook-outlined{
+            margin-right: 10px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .intstagram-outlined{
+            margin-right: 10px;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .weibo-outlined{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+    .facebook-outlined:hover{
+        color: #ffffff;
+    }
+    .intstagram-outlined:hover{
+        color: #ffffff;
+    }
+    .weibo-outlined:hover{
+        color: #ffffff;
+    }
+    p{
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 15px;
+    }
 }

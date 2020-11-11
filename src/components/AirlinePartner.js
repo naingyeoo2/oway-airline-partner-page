@@ -6,14 +6,12 @@ import { partners } from "../constants/constants";
 import "./airline-partner.scss";
 
 import Header from "./Header";
-import NavBar from "./NavBar";
 import Footer from "./Footer";
 import PartnerCard from "./PartnerCard";
 import Promotion from "./Promotion";
 import CompanyOverview from "./CompanyOverview";
 import PopularRoute from "./PopularRoute";
 import PopularCities from "./PopularCities";
-// import PopularAirlines from "./PopularAirlines";
 import FAQ from "./FAQ";
 import TPBGroup from "./TPBGroup";
 import PartnerNavBar from "./PartnerNavBar";
@@ -39,8 +37,6 @@ class AirlinePartner extends Component {
     return (
       <div className="airline-partner">
         <Header />
-        <NavBar />
-
         {this.state.isLoading ? (
           <div>loading...</div>
         ) : (
