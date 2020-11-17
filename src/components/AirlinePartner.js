@@ -15,19 +15,22 @@ import PopularCities from "./PopularCities";
 import FAQ from "./FAQ";
 import TPBGroup from "./TPBGroup";
 import PartnerNavBar from "./PartnerNavBar";
+import Loading from "./Loading";
 
 class AirlinePartner extends Component {
   constructor() {
     super();
     this.state = {
-      isLoading: false
+      isLoading: false,
     };
   }
 
   componentDidMount() {
     const path = this.props.match.params.partnerSlug;
     this.setState({ isLoading: true });
-    const filteredArray = partners.filter((partner) => partner.keyword === path);
+    const filteredArray = partners.filter(
+      (partner) => partner.keyword === path
+    );
     this.setState(filteredArray[0]);
     setTimeout(() => {
       this.setState({ isLoading: false });
@@ -38,7 +41,12 @@ class AirlinePartner extends Component {
       <div className="airline-partner">
         <Header />
         {this.state.isLoading ? (
-          <div>loading...</div>
+          <div>
+            <Loading />
+            <Loading />
+            <Loading />
+            <Loading />
+          </div>
         ) : (
           <div>
             <PartnerCard name={this.state.name} image={this.state.img_url} />
